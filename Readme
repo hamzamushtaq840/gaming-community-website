@@ -1,0 +1,22 @@
+Notes for folder structure.
+
+--> layout
+Nav, Footer, Side menu etc get all defined in layout folder
+
+--> pages, component
+Use the folder page for creating pages of app.
+Create the page name folder in Components folder and define all components in that folder.
+
+--> utils
+everything that help with the web app is included in this folder like, constants, helper function, static data, etc.
+
+--> store images that are being used by react components in /src/assets
+
+--> store images that are being not used by react components ie favicons.
+
+--> Libraries
+-> Tailwind for styling
+-> React-query for state management and fetching with axios.
+-> React-icons if same icon is available in react icons library.
+-> Yup for form validation
+-> React router dom for routing.
