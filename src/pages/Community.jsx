@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
+import GoalsCard from '../components/Community/GoalsCard'
+import { communityGoalsCardsData } from "../utils/consts.js"
 
 export default function Community() {
   return (
@@ -13,12 +15,17 @@ export default function Community() {
             <button className='font-[400] text-[14px] leading-[16.1px] flex-1'>Offer Opportunities</button>
           </NavLink>
         </div>
-        <div>
+        <div className='xsm:mb-[50px] sm:mb-[50px]'>
           <Outlet />
         </div>
       </div>
-      <div>
-        Goals
+      <div className='min-h-[1234px] w-full bg-[#F5F5F5]'>
+        <div className='flex flex-wrap gap-[15px] py-[83px] min-h-[1234px] m-auto w-[1388px] xl:w-[80vw] lg:w-[85vw] md:w-[85vw] sm:w-[85vw] xsm:w-[85vw]'>
+          {communityGoalsCardsData.map((goal) =>
+            <GoalsCard key={goal.id} background={goal.background} image={goal.image} heading={goal.title} description={goal.description} buttonTitle={goal.buttonTitle} />
+          )}
+        </div>
+
       </div>
     </div>
   )
