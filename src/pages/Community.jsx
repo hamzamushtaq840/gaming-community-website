@@ -20,7 +20,7 @@ export default function Community() {
         </div>
       </div>
       <div className='min-h-[1234px] w-full bg-[#F5F5F5]'>
-        <div className='flex flex-wrap gap-[15px] py-[83px] min-h-[1234px] m-auto w-[1388px] xl:w-[80vw] lg:w-[85vw] md:w-[85vw] sm:w-[85vw] xsm:w-[85vw]'>
+        <div className='flex flex-wrap gap-[15px] justify-center py-[83px] min-h-[1234px] m-auto w-[1388px] xl:w-[80vw] lg:w-[85vw] md:w-[85vw] sm:w-[85vw] xsm:w-[85vw]'>
           {communityGoalsCardsData.map((goal) =>
             <GoalsCard key={goal.id} background={goal.background} image={goal.image} heading={goal.title} description={goal.description} buttonTitle={goal.buttonTitle} />
           )}
