@@ -4,7 +4,7 @@ import JobTiming from "../../assets/JobTiming.svg"
 
 export default function JobListingCard({image, title, company, location, createdAt, jobType, role, timing}) {
   return (
-    <div className='w-full min-h-[92.32px] rounded-[9px] border-[1px] border-[#CACACA] pt-[12px] flex xsm:flex-col sm:flex-col md:flex-col justify-between pl-[11px]'>
+    <div className='w-full min-h-[92.32px] rounded-[9px] border-[1px] border-[#CACACA] pt-[12px] flex xsm:flex-col sm:flex-col md:flex-col justify-between pl-[11px] pb-[12px]'>
       <div className='h-full flex xsm:flex-col sm:flex-col gap-[0.8333333333333334vw] xsm:items-start sm:items-start items-center'>
         <img src={image} />
         <div>
@@ -23,7 +23,7 @@ export default function JobListingCard({image, title, company, location, created
         </div>
       </div>
 
-      <div className='flex gap-[0.5875vw] md:ml-[90px] items-center mr-[24px] xsm:mb-[12px] sm:mb-[12px] md:mb-[12px] xsm:mt-[12px] sm:mt-[12px]'>
+      <div className='flex gap-[0.5875vw] md:ml-[90px] items-center mr-[24px]  xsm:mt-[12px] sm:mt-[12px]'>
         <button className='w-[95.7px] h-[32.65px] rounded-[9px] bg-[#FFB3B5] font-[400] text-[14px] leading-[14px]'>{jobType}</button>
         <button className='w-[95.7px] h-[32.65px] rounded-[9px] bg-[#E87370] font-[400] text-[14px] leading-[14px]'>{role}</button>
         <button className='w-[95.7px] h-[32.65px] rounded-[9px] bg-[#FF2F36] font-[400] text-[14px] leading-[14px]'>{timing}</button>
