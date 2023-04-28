@@ -7,8 +7,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,4 +21,12 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.signupbg {
+  background-image: url("./assets/signupBg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
