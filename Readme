@@ -10,13 +10,14 @@ Create the page name folder in Components folder and define all components in th
 --> utils
 everything that help with the web app is included in this folder like, constants, helper function, static data, etc.
 
---> store images that are being used by react components in /src/assets
+--> store images that are being used by react components in /src/assets.
 
 --> store images that are being not used by react components ie favicons.
 
 --> Libraries
--> Tailwind for styling
+-> Tailwind for styling.
 -> React-query for state management and fetching with axios.
 -> React-icons if same icon is available in react icons library.
--> Yup for form validation
+-> Formik for form validation.
+-> Yup for form validation schema.
 -> React router dom for routing.

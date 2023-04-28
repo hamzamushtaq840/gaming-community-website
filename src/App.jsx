@@ -8,11 +8,14 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Authentication Routes */}
+        <Route path="/signup" element={<SignupMain />}></Route>
+        <Route path="/signup-community/:communityId" element={<SignupCommunity />}></Route>
+        <Route path="/signin" element={<SigninMain />}></Route>
+        <Route path="/signin-community/:communityId" element={<SigninCommunity />}></Route>
+        {/* Main Page */}
         <Route element={<CommunityNav></CommunityNav>}>
-          <Route path="/" element={<Community />}>
-            <Route index element={<AchievedGoals></AchievedGoals>}></Route>
-            <Route path="offer-opportunities" element={<OfferOpportunities></OfferOpportunities>}></Route>
-          </Route>
+          <Route path="/" element={<Community />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

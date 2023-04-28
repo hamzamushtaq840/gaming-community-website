@@ -9,22 +9,22 @@ export default {
       fontFamily: {
         'poppins': ['Poppins', "sans-serif"],
       },
-      colors:{
-        'primary':'#EC1F26'
+      colors: {
+        'primary': '#EC1F26'
       }
     },
     screens: {
-      'xsm': {'min': '0px', 'max': '576px'},
+      'xsm': { 'min': '0px', 'max': '576px' },
 
-      'sm': {'min': '577px', 'max': '767px'},
+      'sm': { 'min': '577px', 'max': '767px' },
 
-      'md': {'min': '768px', 'max': '1023px'},
+      'md': { 'min': '768px', 'max': '1023px' },
 
-      'lg': {'min': '1024px', 'max': '1279px'},
+      'lg': { 'min': '1024px', 'max': '1279px' },
 
-      'xl': {'min': '1280px', 'max': '1535px'},
+      'xl': { 'min': '1280px', 'max': '1535px' },
 
-      '2xl': {'min': '1536px'},
+      '2xl': { 'min': '1536px', 'max': '2000px' },
     },
   },
   plugins: [],
