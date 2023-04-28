@@ -7,6 +7,8 @@ import SigninCommunity from "./pages/SigninCommunity"
 import SigninMain from "./pages/SigninMain"
 import SignupCommunity from "./pages/SignupCommunity"
 import SignupMain from "./pages/SignupMain"
+import Dashboard from "./pages/Dashboard"
+import Layout from "./layout/Layout"
 
 export default function App() {
   return (
@@ -23,6 +25,9 @@ export default function App() {
             <Route index element={<AchievedGoals></AchievedGoals>}></Route>
             <Route path="offer-opportunities" element={<OfferOpportunities></OfferOpportunities>}></Route>
           </Route>
+        </Route>
+        <Route element={<Layout></Layout>}>
+          <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

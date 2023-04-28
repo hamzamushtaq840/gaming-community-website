@@ -9,9 +9,7 @@ export default function SigninMain() {
 
   return (
     <div className='flex font-helvetica sm:text-[.8rem] md:text-[.9rem] xsm:text-[.7rem]'>
-      <div className='signupbg w-[50vw] md:w-[35vw] sm:w-0 xsm:w-0 flex justify-center items-center'>
-        LOGO
-      </div>
+      <div className='signupbg w-[50vw] md:w-[35vw] sm:w-0 xsm:w-0 flex justify-center items-center'>LOGO</div>
       <div className='flex flex-col w-[50vw] h-[100vh] md:w-[65vw] xsm:w-full sm:w-full bg-black'>
         <div className='flex flex-col flex-1 justify-center px-[10.5vw]'>
           <div className='flex flex-col'>
