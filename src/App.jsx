@@ -28,6 +28,7 @@ export default function App() {
             <Route path="offer-opportunities" element={<OfferOpportunities></OfferOpportunities>}></Route>
           </Route>
         </Route>
+        {/* Other Routes */}
         <Route element={<Layout></Layout>}>
           <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
           <Route path="/profile" element={<Profile></Profile>}></Route>

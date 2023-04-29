@@ -58,3 +58,19 @@ body {
   box-shadow: 0px 10px 10px rgba(44, 44, 44, 0.941);
   z-index: 100;
 }
+
+.navlink-active svg {
+  fill: red;
+}
+
+.navlink-active p {
+  color: red;
+}
+
+.nav-link:hover svg {
+  fill: red;
+}
+
+.nav-link:hover p {
+  color: red;
+}
