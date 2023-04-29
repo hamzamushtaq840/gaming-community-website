@@ -15,91 +15,8 @@ import { ImStack } from 'react-icons/im'
 export default function Layout() {
   return (
     <div className='flex'>
-      <div className='w-[12.8125vw] min-w-[170px] min-h-[100vh] bg-primary'>
-        <div className='mt-[31px] ml-[38px] mr-[37px]'>
-          <img src={logoplaceholder} />
-        </div>
-
-        <ul className='ml-[1.1979166666666667vw] mr-[1.5697916666666667vw] flex flex-col gap-[15.57px] mt-[58.5px] text-white'>
-          <NavLink to={'/dashboard'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Dashboard</p>
-            </li>
-          </NavLink>
-          <NavLink to={'/matches'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Matches</p>
-            </li>
-          </NavLink>
-          <NavLink to={'/profile'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Profile</p>
-            </li>
-          </NavLink>
-          <NavLink to={'/team-profile'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Team Profile</p>
-            </li>
-          </NavLink>
-          <NavLink to={'/marketplace'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Marketplace</p>
-            </li>
-          </NavLink>
-          <NavLink to={'/company'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Company</p>
-            </li>
-          </NavLink>
-          <NavLink to={'/jobs'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Jobs</p>
-            </li>
-          </NavLink>
-          <NavLink to={'/labs-and-groups'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Labs & Groups</p>
-            </li>
-          </NavLink>
-          <NavLink to={'/events'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Events</p>
-            </li>
-          </NavLink>
-          <NavLink to={'/knowledge-hub'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Knowledge Hub</p>
-            </li>
-          </NavLink>
-          <NavLink to={'/mentor'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Mentor</p>
-            </li>
-          </NavLink>
-          <NavLink to={'/investor'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Investor</p>
-            </li>
-          </NavLink>
-          <NavLink to={'/data-repository'} className={({ isActive }) => isActive ? "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] bg-[#FFFFFF] text-primary flex items-center" : "w-[10.044791666666667vw] min-w-[140px] h-[42.43px] rounded-[9px] flex items-center"}>
-            <li className='flex gap-[0.5453125vw] items-center ml-[1.1458333333333333vw]'>
-              <CgHome className='text-inherit w-[19.63px] h-[19.57px] ' />
-              <p className='font-[400] text-[14px] leading-[14px]'>Data Repository</p>
-            </li>
-          </NavLink>
-        </ul>
+      <div className='w-[12.8125vw] min-h-[100vh] bg-primary xsm:hidden sm:hidden md:hidden'>
+        Sidebar
       </div>
 
       <div className='flex-1 '>
@@ -143,7 +60,7 @@ export default function Layout() {
             </div>
           </div>
         </div>
-        <div className='bg-[#FFFFFF] dark:bg-[#000000]'>
+        <div>
           <Outlet />
         </div>
       </div>

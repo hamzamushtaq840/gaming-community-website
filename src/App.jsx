@@ -10,6 +10,7 @@ import SignupMain from "./pages/SignupMain"
 import Dashboard from "./pages/Dashboard"
 import Profile from "./pages/Profile"
 import Layout from "./layout/Layout"
+import TeamProfile from "./pages/TeamProfile"
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
         <Route element={<Layout></Layout>}>
           <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
           <Route path="/profile" element={<Profile></Profile>}></Route>
+          <Route path="/team-profile" element={<TeamProfile />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

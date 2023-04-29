@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         'poppins': ['Poppins', "sans-serif"],
+        'helvetica': ['Helvetica', 'sans-serif'],
       },
       colors: {
         'primary': '#EC1F26'

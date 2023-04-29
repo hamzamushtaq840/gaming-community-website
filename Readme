@@ -18,6 +18,5 @@ everything that help with the web app is included in this folder like, constants
 -> Tailwind for styling.
 -> React-query for state management and fetching with axios.
 -> React-icons if same icon is available in react icons library.
--> Formik for form validation.
 -> Yup for form validation schema.
 -> React router dom for routing.
