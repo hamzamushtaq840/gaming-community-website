@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 export default function Layout() {
   return (
     <div className='flex'>
-      <div className='w-[12.8125vw] min-h-[100vh] bg-primary'>
+      <div className='w-[12.8125vw] min-h-[100vh] bg-primary xsm:hidden sm:hidden md:hidden'>
         Sidebar
       </div>
       <div className='flex-1 '>
@@ -12,7 +12,7 @@ export default function Layout() {
           nav
         </div>
         <div>
-          <Outlet/>
+          <Outlet />
         </div>
       </div>
     </div>
