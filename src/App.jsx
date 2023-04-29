@@ -8,6 +8,7 @@ import SigninMain from "./pages/SigninMain"
 import SignupCommunity from "./pages/SignupCommunity"
 import SignupMain from "./pages/SignupMain"
 import Dashboard from "./pages/Dashboard"
+import Profile from "./pages/Profile"
 import Layout from "./layout/Layout"
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
         </Route>
         <Route element={<Layout></Layout>}>
           <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
+          <Route path="/profile" element={<Profile></Profile>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

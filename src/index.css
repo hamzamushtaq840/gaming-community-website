@@ -7,7 +7,6 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: white;
   background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -29,4 +28,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+.activeNavIconColor{
+  filter: invert(16%) sepia(72%) saturate(4562%) hue-rotate(348deg) brightness(99%) contrast(94%);
 }
