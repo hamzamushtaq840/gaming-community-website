@@ -13,12 +13,7 @@ import Layout from "./layout/Layout"
 import TeamProfile from "./pages/TeamProfile"
 import ManageProfile from "./components/Profile/ManageProfile"
 import ViewProfile from "./components/Profile/ViewProfile"
-<<<<<<< HEAD
 import TeamProfileHeader from "./layout/TeamProfileHeader"
-=======
-import ManageProfile from "./components/Profile/ManageProfile"
-import ViewProfile from "./components/Profile/ViewProfile"
->>>>>>> 23816797e0b49ffeacf8e217ad11773655611319
 
 export default function App() {
   return (
@@ -39,20 +34,17 @@ export default function App() {
         {/* Other Routes */}
         <Route element={<Layout></Layout>}>
           <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
-<<<<<<< HEAD
           <Route path="/profile" element={<Profile></Profile>}></Route>
           <Route element={<TeamProfileHeader></TeamProfileHeader>}>
             <Route path="/team-profile" element={<TeamProfile />}></Route>
           </Route>
-=======
-<Route path="/profile" element={<Profile></Profile>}>
+          <Route path="/profile" element={<Profile></Profile>}>
             <Route index element={<ViewProfile></ViewProfile>}></Route>
             <Route path="manage" element={<ManageProfile></ManageProfile>}></Route>
           </Route>
           <Route element={<TeamProfileHeader></TeamProfileHeader>}>
             <Route path="/team-profile" element={<TeamProfile />}></Route>
           </Route>
->>>>>>> 23816797e0b49ffeacf8e217ad11773655611319
         </Route >
       </Routes >
     </BrowserRouter >
