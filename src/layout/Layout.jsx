@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import logoplaceholder from "../assets/logoplaceholder.svg"
 import LayoutDashboard from "../assets/LayoutDashboard.png"
@@ -6,12 +6,28 @@ import NavbarFavorite from "../assets/NavbarFavorite.svg"
 import NavbarMessage from "../assets/NavbarMessage.svg"
 import NavbarNotification from "../assets/NavbarNotification.svg"
 import NavbarProfile from "../assets/NavbarProfile.png"
+import Polygon from "../assets/Polygon.png"
 import NavbarMegaphone from "../assets/NavbarMegaphone.svg"
 import { CgHome } from 'react-icons/cg'
 import { BsSearch } from 'react-icons/bs'
 import { ImStack } from 'react-icons/im'
 
 export default function Layout() {
+
+  const [showDropDown, setShowDropDown] = useState(false);
+
+  const hideDropDown = () => {
+    setShowDropDown(false)
+  }
+
+  useEffect(() => {
+    document.addEventListener('click', hideDropDown)
+
+    return () => {
+      document.removeEventListener('click', hideDropDown)
+    }
+  }, [])
+
   return (
     <div className='flex relative'>
       <div className='w-[12.8125vw] relative z-[1000] min-h-[100vh] max-h-[100vh] min-w-[216px] bg-primary xsm:hidden sm:hidden md:hidden '>
@@ -163,8 +179,32 @@ export default function Layout() {
               <div className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center'>
                 <img src={NavbarNotification} className='text-[#000000] dark:text-[#ffffff] w-[24.64px] xsm:w-[17px] h-[23px]'></img>
               </div>
-              <div className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center'>
-                <img src={NavbarProfile} className='text-[#000000] dark:text-[#ffffff] min-w-[44px] xsm:min-w-[30px] xsm:w-[30px] xsm:h-[30px] h-[44px]'></img>
+              <div onClick={(e) => e.stopPropagation()} className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center relative '>
+                <img onClick={(e) => { setShowDropDown(!showDropDown);e.stopPropagation() }} src={NavbarProfile} className='text-[#000000] dark:text-[#ffffff] min-w-[44px] xsm:min-w-[30px] xsm:w-[30px] xsm:h-[30px] h-[44px]'></img>
+
+                {showDropDown &&
+                  <>
+                    <div onClick={(e) => e.stopPropagation()} class=" transition-all  border-solid border-b-[#525252] border-b-[12px] border-x-transparent border-x-[12px] border-t-0 absolute z-[100000] top-[calc(100%+30px)]"></div>
+                    <div onClick={(e) => e.stopPropagation()} className=' w-[237px] h-[220px] dark:bg-[#525252] absolute z-[100000] rounded-[10px] top-[calc(100%+42px)] right-[-12px]'>
+                      <div className='w-[186px] m-auto mt-[40px] divide-y-[1px] divide-[rgba(255,255,255,0.5)] flex flex-col gap-[15px]'>
+                        <div className='w-full flex flex-col gap-[10px]'>
+                          <NavLink to={'/profile/manage'} className={({ isActive }) => isActive ? "bg-primary rounded-[9px]" : ""}>
+                            <p className='w-[186px] h-[40px] bg-inherit text-left pl-[22px] flex items-center text-white rounded-[9px]'>Manage Profile</p>
+                          </NavLink>
+                          <NavLink to={''} className={({ isActive }) => isActive ? "bg-primary" : ""}>
+                            <p className='w-[186px] h-[40px] bg-inherit text-left pl-[22px] flex items-center text-white rounded-[9px]'>Security</p>
+                          </NavLink>
+                        </div>
+                        <div className='pt-[15px] text-[rgba(255,255,255,0.5)]'>
+                          <p className='w-[186px] h-[40px] text-left pl-[22px] flex items-center text-[rgba(255,255,255,0.5)] rounded-[9px] gap-[10px]'>
+                            <svg fill="black" width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1 5.69996L17.1 3.79996C17.1 1.70045 15.3985 -5.13364e-05 13.3 -5.15199e-05L3.79996 -5.23504e-05C1.70046 -5.2534e-05 -4.95092e-05 1.70045 -4.96927e-05 3.79996C-4.99692e-05 6.96252 -5.04128e-05 12.0365 -5.06894e-05 15.2C-5.08728e-05 17.2985 1.70045 19 3.79996 19C6.51602 19 10.583 19 13.3 19C15.3985 19 17.1 17.2985 17.1 15.2L17.1 13.3C17.1 12.7756 16.6744 12.35 16.15 12.35C15.6256 12.35 15.2 12.7756 15.2 13.3C15.2 13.3 15.2 14.1901 15.2 15.2C15.2 16.2488 14.3488 17.1 13.3 17.1L3.79996 17.1C2.75021 17.1 1.89995 16.2488 1.89995 15.2L1.89996 3.79996C1.89996 2.7502 2.75021 1.89995 3.79996 1.89995C6.51602 1.89995 10.583 1.89995 13.3 1.89995C14.3488 1.89995 15.2 2.75021 15.2 3.79996C15.2 4.80886 15.2 5.69996 15.2 5.69996C15.2 6.22342 15.6256 6.64997 16.15 6.64997C16.6744 6.64997 17.1 6.22342 17.1 5.69996ZM9.89328 10.45L11.1216 11.6774C11.4921 12.0488 11.4921 12.6502 11.1216 13.0216C10.7502 13.3921 10.1488 13.3921 9.77833 13.0216L6.92832 10.1716C6.55687 9.80017 6.55687 9.19883 6.92832 8.82738L9.77833 5.97737C10.1488 5.60687 10.7502 5.60687 11.1216 5.97737C11.4921 6.34882 11.4921 6.95017 11.1216 7.32162L9.89328 8.54997L18.05 8.54997C18.5744 8.54997 19 8.97557 19 9.49997C19 10.0234 18.5744 10.45 18.05 10.45L9.89328 10.45Z" fill="white" />
+                            </svg>
+                            Logout</p>
+                        </div>
+                      </div>
+                    </div>
+                  </>}
               </div>
               <div className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center'>
                 <img src={NavbarMegaphone} className='text-[#000000] dark:text-[#ffffff] w-[24px] xsm:w-[17px] h-[25.72px]'></img>
