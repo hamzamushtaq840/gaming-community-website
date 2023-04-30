@@ -66,12 +66,12 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #EC1F26;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #c3c3c3;
+  background: #e76060;
   border-radius: 100px;
 }
 

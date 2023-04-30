@@ -30,8 +30,8 @@ export default function Layout() {
 
   return (
     <div className='flex relative'>
-      <div className='w-[12.8125vw] relative z-[1000] min-h-[100vh] max-h-[100vh] min-w-[180px]  bg-primary xsm:hidden sm:hidden md:hidden '>
-        <div className='px-[1.4973958333333333vw] pt-[31px] fixed w-[12.8125vw] min-h-[100vh] max-h-[100vh] min-w-[180px] bg-primary overflow-y-auto overflow-x-hidden'>
+      <div className='w-[12.8125vw] relative z-[1000] min-h-[100vh] max-h-[100vh] min-w-[216px] bg-primary xsm:hidden sm:hidden md:hidden '>
+        <div className='px-[1.4973958333333333vw] pt-[31px] fixed w-[12.8125vw] min-h-[100vh] max-h-[100vh] min-w-[216px] bg-primary overflow-y-auto overflow-x-hidden'>
           <div className='pl-[0.9765625vw]'>
             <img className='w-[171px]' src={logoplaceholder} />
           </div>
@@ -143,7 +143,7 @@ export default function Layout() {
                 <path d="M12.3927 15.5723C12.0076 15.5723 11.6953 15.8845 11.6953 16.2696V16.6729C11.6953 17.058 12.0076 17.3703 12.3927 17.3703C12.7778 17.3703 13.0901 17.058 13.0901 16.6729V16.2696C13.0901 15.8845 12.7778 15.5723 12.3927 15.5723Z" />
                 <path d="M14.4259 15.5723C14.0408 15.5723 13.7285 15.8845 13.7285 16.2696V16.6729C13.7285 17.058 14.0408 17.3703 14.4259 17.3703C14.811 17.3703 15.1233 17.058 15.1233 16.6729V16.2696C15.1233 15.8845 14.811 15.5723 14.4259 15.5723Z" />
               </svg>
-              <p className='text-[14px] text-inherit pt-[2px]'>Investor</p>
+              <p className='text-[14px] text-inherit pt-[2px]'>Data Repository</p>
             </NavLink>
           </div>
         </div>

@@ -13,6 +13,7 @@ import Layout from "./layout/Layout"
 import TeamProfile from "./pages/TeamProfile"
 import ManageProfile from "./components/Profile/ManageProfile"
 import ViewProfile from "./components/Profile/ViewProfile"
+import TeamProfileHeader from "./layout/TeamProfileHeader"
 
 export default function App() {
   return (
@@ -33,13 +34,19 @@ export default function App() {
         {/* Other Routes */}
         <Route element={<Layout></Layout>}>
           <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
+          <Route path="/profile" element={<Profile></Profile>}></Route>
+          <Route element={<TeamProfileHeader></TeamProfileHeader>}>
+            <Route path="/team-profile" element={<TeamProfile />}></Route>
+          </Route>
           <Route path="/profile" element={<Profile></Profile>}>
             <Route index element={<ViewProfile></ViewProfile>}></Route>
             <Route path="manage" element={<ManageProfile></ManageProfile>}></Route>
           </Route>
-          <Route path="/team-profile" element={<TeamProfile />}></Route>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+          <Route element={<TeamProfileHeader></TeamProfileHeader>}>
+            <Route path="/team-profile" element={<TeamProfile />}></Route>
+          </Route>
+        </Route >
+      </Routes >
+    </BrowserRouter >
   )
 }
