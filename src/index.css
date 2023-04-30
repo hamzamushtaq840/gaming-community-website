@@ -59,18 +59,23 @@ body {
   z-index: 100;
 }
 
-.navlink-active svg {
-  fill: red;
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
 }
 
-.navlink-active p {
-  color: red;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-.nav-link:hover svg {
-  fill: red;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c3c3c3;
+  border-radius: 100px;
 }
 
-.nav-link:hover p {
-  color: red;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
 }
