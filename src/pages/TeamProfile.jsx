@@ -54,7 +54,7 @@ export default function TeamProfile() {
   ]
 
   return (
-    <div className='dark:bg-black dark:text-white bg-white text-black justify-center flex px-[10.9vw] xsm:px-[6vw] font-helvetica'>
+    <div className='dark:bg-black dark:text-white bg-white text-black justify-center flex px-[10.9vw] xsm:px-[6vw] sm:px-[6vw] font-helvetica'>
       <div className='w-full'>
         <div className='w-full relative'>
           <div className='userProfileHeader h-[225px] mt-[66px] z-10 flex flex-col '>
