@@ -57,7 +57,7 @@ export default function TeamProfile() {
     <div className='dark:bg-black dark:text-white bg-white text-black justify-center flex px-[10.9vw] xsm:px-[6vw] sm:px-[6vw] font-helvetica'>
       <div className='w-full'>
         <div className='w-full relative'>
-          <div className='userProfileHeader h-[225px] mt-[66px] z-10 flex flex-col '>
+          <div className='userProfileHeader h-[225px] mt-[66px] z-10 flex flex-col'>
             <div className='flex mt-[42px] flex-col items-center'>
               <img src={teamLogo} alt="Team Logo" className='mb-[8.82px]' />
               <h1 className='leading-[20px] text-[clamp(12px,1.3020833333333333vw,20px)] font-[400]'>Team Profile 1</h1>
