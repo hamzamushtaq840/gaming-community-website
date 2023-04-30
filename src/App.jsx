@@ -11,6 +11,7 @@ import Dashboard from "./pages/Dashboard"
 import Profile from "./pages/Profile"
 import Layout from "./layout/Layout"
 import TeamProfile from "./pages/TeamProfile"
+import TeamProfileHeader from "./layout/TeamProfileHeader"
 
 export default function App() {
   return (
@@ -32,7 +33,9 @@ export default function App() {
         <Route element={<Layout></Layout>}>
           <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
           <Route path="/profile" element={<Profile></Profile>}></Route>
-          <Route path="/team-profile" element={<TeamProfile />}></Route>
+          <Route element={<TeamProfileHeader></TeamProfileHeader>}>
+            <Route path="/team-profile" element={<TeamProfile />}></Route>
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
