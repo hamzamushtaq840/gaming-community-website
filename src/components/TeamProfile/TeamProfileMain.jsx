@@ -23,10 +23,6 @@ import vsSoftwareDesign from './../../assets/vsSoftwareDesign.svg'
 import SingleTeamMember from './SingleTeamMember'
 import SinglePreviousProject from './SinglePreviousProject'
 import SingleTeamMentor from './SingleTeamMentor'
-import EditExperienceModal from './EditExperienceModal'
-import AddTechAndToolsModal from './AddTechAndToolsModal'
-import AddSpecializationAndBussinessModal from './AddSpecializationAndBussinessModal'
-import AddTechnicalFunctionsModal from './AddTechnicalFunctionsModal'
 
 export default function TeamProfileMain() {
     return (
@@ -402,7 +398,6 @@ export default function TeamProfileMain() {
                     </div>
                 </div>
             </div>
-            <AddTechnicalFunctionsModal />
         </>
     )
 }
