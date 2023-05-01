@@ -13,9 +13,6 @@ import SigninMain from "./pages/SigninMain"
 import SignupCommunity from "./pages/SignupCommunity"
 import SignupMain from "./pages/SignupMain"
 import TeamProfile from "./pages/TeamProfile"
-import ManageProfile from "./components/Profile/ManageProfile"
-import ViewProfile from "./components/Profile/ViewProfile"
-import TeamProfileHeader from "./layout/TeamProfileHeader"
 import ProfileAnalytics from "./components/Profile/ProfileAnalytics"
 
 
@@ -38,10 +35,6 @@ export default function App() {
         {/* Other Routes */}
         <Route element={<Layout></Layout>}>
           <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
-<<<<<<< HEAD
-=======
-      
->>>>>>> 520acc1219c902433607c8b83522df1e57841ea8
           <Route path="/profile" element={<Profile></Profile>}>
             <Route index element={<ViewProfile></ViewProfile>}></Route>
             <Route path="manage" element={<ManageProfile></ManageProfile>}></Route>
