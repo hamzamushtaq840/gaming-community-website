@@ -14,7 +14,7 @@ export default {
       },
       colors: {
         'primary': '#EC1F26'
-      }
+      },
     },
     screens: {
       'xsm': { 'min': '0px', 'max': '576px' },
