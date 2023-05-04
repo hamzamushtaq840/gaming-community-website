@@ -11,9 +11,13 @@ export default function Profile() {
         <NavLink to={'/profile/analytics'} className={({ isActive }) => isActive && location.pathname === "/profile/analytics" ? "bg-primary text-white rounded-[9px]" : "bg-[rgba(255,255,255,0.25)] rounded-[9px]"}>
           <button className='w-[200px] h-[48px] rounded-[9px]'>Analytics</button>
         </NavLink>
+        <NavLink to={'/profile/analytics'} className={({ isActive }) => isActive && location.pathname === "/profile/pages" ? "bg-primary text-white rounded-[9px]" : "bg-[rgba(255,255,255,0.25)] rounded-[9px]"}>
+          <button className='w-[200px] h-[48px] rounded-[9px]'>Pages</button>
+        </NavLink>
+        <NavLink to={'/profile/share'} className={({ isActive }) => isActive && location.pathname === "/profile/share" ? "bg-primary text-white rounded-[9px]" : "bg-[rgba(255,255,255,0.25)] rounded-[9px]"}>
+          <button className='w-[200px] h-[48px] rounded-[9px]'>Share</button>
+        </NavLink>
 
-        <button className='w-[200px] h-[48px] bg-[rgba(255,255,255,0.25)] text-custom-12 rounded-[9px]'>Pages</button>
-        <button className='w-[200px] h-[48px] bg-[rgba(255,255,255,0.25)] rounded-[9px]'>Share</button>
       </div>
       <div>
         <Outlet />
