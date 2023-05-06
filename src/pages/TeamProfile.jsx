@@ -14,7 +14,8 @@ import teamProfileStakeholder from './../assets/teamProfileStakeholder.svg'
 import userProfileLogo from './../assets/userProfileLogo.svg'
 import viewAsMember from './../assets/viewasmember.svg'
 import TeamProfileMain from '../components/TeamProfile/TeamProfileMain'
-import EditTeamProfileModal from '../components/TeamProfile/EditTeamProfileModal'
+import EditTeamProfileModal from '../components/TeamProfile/Modals/EditTeamProfileModal'
+import { NavLink } from 'react-router-dom'
 
 export default function TeamProfileHeader() {
   const [editTeamProfileModal, setEditTeamProfileModal] = useState(false)
@@ -59,14 +60,14 @@ export default function TeamProfileHeader() {
             </div>
             <div className='py-[1px] dark:bg-[#FFFFFF] bg-black mb-3 opacity-[0.15]'></div>
             <div className='flex justify-around mb-[21px] items-center'>
-              <div className='flex gap-[8.43px] items-center'>
+              <NavLink to='/team-profile/allTeams' className='buttonAnimation cursor-pointer flex gap-[8.43px] items-center'>
                 <img src={allTeams} alt="All Teams" className='cursor-pointer w-[24.57px] gap-[7.43px]' />
                 <p className='text-custom-14 md:hidden xsm:hidden sm:hidden mb-[-3px]'>All Teams</p>
-              </div>
-              <div className='flex gap-[8.43px] items-center'>
+              </NavLink>
+              <NavLink to='/team-profile/allTeams' className='flex gap-[8.43px] items-center'>
                 <img src={admins} alt="All Teams" className='cursor-pointer w-[24.57px] gap-[7.43px]' />
                 <p className='text-custom-16 md:hidden xsm:hidden sm:hidden mb-[-3px]'>Admins</p>
-              </div>
+              </NavLink>
               <div className='flex gap-[8.43px] items-center'>
                 <img src={viewAsMember} alt="All Teams" className='cursor-pointer w-[28.57px] gap-[7.43px]' />
                 <p className='text-custom-16 md:hidden xsm:hidden sm:hidden mb-[-3px]'>View As Member</p>

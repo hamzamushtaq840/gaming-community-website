@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { ImCross } from 'react-icons/im'
 import { HiPlus } from 'react-icons/hi'
-import { selectOptions } from '../../utils/consts'
+import { selectOptions } from '../../../utils/consts'
 
 const AddSpecializationAndBussinessModal = ({ setModal }) => {
     const [selectedOption, setSelectedOption] = useState('Choose a specialization or business function');

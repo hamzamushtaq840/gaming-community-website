@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { ImCross } from 'react-icons/im'
 import { HiPlus } from 'react-icons/hi'
-import { selectOptions } from '../../utils/consts'
+import { selectOptions } from '../../../utils/consts'
 
-const AddTechAndToolsModal = ({ setModal }) => {
-    const [selectedOption, setSelectedOption] = useState('Chooseatechnologyandtools');
+const AddTechnicalFunctionsModal = ({ setModal }) => {
+    const [selectedOption, setSelectedOption] = useState('Choose a specialization or business function');
     const [selectedOptionsArray, setSelectedOptionsArray] = useState([]);
 
     const handleDeleteClick = (valueToDelete) => {
@@ -36,11 +36,11 @@ const AddTechAndToolsModal = ({ setModal }) => {
                 <div className='flex w-full justify-end mr-[1.9416666666666667vw] mt-[10px]'><ImCross className='text-[#7a7979] w-[13px] cursor-pointer hover:text-[#FF5359]' onClick={() => setModal(false)} /></div>
                 <div className='overflow-y-auto w-full px-[2.03125vw] xsm:px-[16px] sm:px-[16px] '>
                     <form onSubmit={handleSubmit} className='w-full relative'>
-                        <h1 className='text-custom-20 font-[700] leading-[20px] mt-[4px] mb-[20px]'>Add Technology and Tools</h1>
+                        <h1 className='text-custom-20 font-[700] leading-[20px] mt-[4px] mb-[20px]'>Add Technical Functions</h1>
                         <div className='mt-[1.8625vw] xsm:mt-[15px] sm:mt-[15px] flex flex-col gap-[19px]'>
                             <div className='flex w-full gap-[10px]'>
-                                <select defaultValue='Chooseatechnologyandtools' value={selectedOption} onChange={handleSelectChange} className='outline-none px-[5px] flex-1 text-[#1E1E21] border-[1px] border-[#ccc] text-custom-16 leading-[22px] h-[48px] rounded-[9px] bg-[white]'>
-                                    <option disabled value='Chooseatechnologyandtools'>Choose a technology and tools</option>
+                                <select defaultValue='Choose a specialization or business function' value={selectedOption} onChange={handleSelectChange} className='outline-none px-[5px] flex-1 text-[#1E1E21] border-[1px] border-[#ccc] text-custom-16 leading-[22px] h-[48px] rounded-[9px] bg-[white]'>
+                                    <option disabled value='Choose a specialization or business function'>Choose a specialization or business function</option>
                                     {selectOptions.map(option => (
                                         <option key={option.value} value={option.value}>{option.label}</option>
                                     ))}
@@ -72,4 +72,4 @@ const AddTechAndToolsModal = ({ setModal }) => {
     )
 }
 
-export default AddTechAndToolsModal
+export default AddTechnicalFunctionsModal
