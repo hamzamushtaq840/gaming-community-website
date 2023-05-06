@@ -1,20 +1,20 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Community from "./pages/Community"
-import CommunityNav from "./layout/CommunityNav"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import AchievedGoals from "./components/Community/AchievedGoals"
 import OfferOpportunities from "./components/Community/OfferOpportunities"
+import ManageProfile from "./components/Profile/ManageProfile"
+import ViewProfile from "./components/Profile/ViewProfile"
+import CommunityNav from "./layout/CommunityNav"
+import Layout from "./layout/Layout"
+import Community from "./pages/Community"
+import Dashboard from "./pages/Dashboard"
+import Profile from "./pages/Profile"
 import SigninCommunity from "./pages/SigninCommunity"
 import SigninMain from "./pages/SigninMain"
 import SignupCommunity from "./pages/SignupCommunity"
 import SignupMain from "./pages/SignupMain"
-import Dashboard from "./pages/Dashboard"
-import Profile from "./pages/Profile"
-import Layout from "./layout/Layout"
 import TeamProfile from "./pages/TeamProfile"
-import ManageProfile from "./components/Profile/ManageProfile"
-import ViewProfile from "./components/Profile/ViewProfile"
-import TeamProfileHeader from "./layout/TeamProfileHeader"
 import ProfileAnalytics from "./components/Profile/ProfileAnalytics"
+import AllTeams from "./components/TeamProfile/AllTeams"
 import ProfileShare from "./components/Profile/ProfileShare"
 import ProfilePage from "./components/Profile/ProfilePage"
 
@@ -37,9 +37,6 @@ export default function App() {
         {/* Other Routes */}
         <Route element={<Layout></Layout>}>
           <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
-          <Route element={<TeamProfileHeader></TeamProfileHeader>}>
-            <Route path="/team-profile" element={<TeamProfile />}></Route>
-          </Route>
           <Route path="/profile" element={<Profile></Profile>}>
             <Route index element={<ViewProfile></ViewProfile>}></Route>
             <Route path="manage" element={<ManageProfile></ManageProfile>}></Route>
@@ -47,8 +44,9 @@ export default function App() {
             <Route path="pages" element={<ProfilePage></ProfilePage>}></Route>
             <Route path="share" element={<ProfileShare></ProfileShare>}></Route>
           </Route>
-          <Route element={<TeamProfileHeader></TeamProfileHeader>}>
-            <Route path="/team-profile" element={<TeamProfile />}></Route>
+          <Route path="/team-profile">
+            <Route index element={<TeamProfile />}></Route>
+            <Route path="allTeams" element={<AllTeams />}></Route>
           </Route>
         </Route >
       </Routes >

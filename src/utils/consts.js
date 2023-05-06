@@ -14,6 +14,8 @@ import JobListing1 from "../assets/JobListing1.svg"
 import JobListing2 from "../assets/JobListing2.svg"
 import JobListing3 from "../assets/JobListing3.svg"
 import JobListing4 from "../assets/JobListing4.svg"
+import userProfileLogo from '../assets/userProfileLogo.svg'
+import user from '../assets/user.svg'
 
 export const communityGoalsCardsData = [
   {
@@ -158,5 +160,111 @@ export const jobListingData = [
     jobType: 'On-site',
     role: 'Mid-Level',
     timing: 'Full Time',
+  },
+]
+
+export const teamsMembers = [
+  {
+    id: 1,
+    name: 'John Doe',
+    role: 'Frontend Engineer',
+    createdAt: 'September 14, 2016',
+    country: 'Lebanon',
+    city: 'Beirut',
+    paragraphs: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru']
+  },
+  {
+    id: 2,
+    name: 'John Doe',
+    role: 'Frontend Engineer',
+    createdAt: 'September 14, 2016',
+    country: 'Lebanon',
+    city: 'Beirut',
+    paragraphs: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru']
+  },
+  {
+    id: 3,
+    name: 'John Doe',
+    role: 'Frontend Engineer',
+    createdAt: 'September 14, 2016',
+    country: 'Lebanon',
+    city: 'Beirut',
+    paragraphs: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru']
+  }
+]
+
+export const previousProjects = [
+  {
+    id: 1,
+    name: 'Indie Game Development',
+    createdAt: 'September 14, 2016',
+    country: 'Lebanon',
+    city: 'Beirut',
+    paragraphs: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru']
+  },
+]
+
+export const selectOptions = [
+  { value: 'option1', label: 'Option 1' },
+  { value: 'option2', label: 'Option 2' },
+  { value: 'option3', label: 'Option 3' },
+];
+
+export const allTeams = [
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
   },
 ]
