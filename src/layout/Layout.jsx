@@ -80,7 +80,7 @@ export default function Layout() {
               </svg>
               <p className='text-[14px] text-inherit pt-[2px]'>Marketplace</p>
             </NavLink>
-            <NavLink to="/marketplace" className={({ isActive }) => { return isActive ? "flex gap-[0.662109375vw] h-[42.43px] transition duration-350 items-center px-[1vw] rounded-[9px] bg-white text-primary" : "text-white flex gap-[0.662109375vw] h-[42.43px] transition duration-350 items-center px-[1vw] hover:bg-white hover:text-primary rounded-[9px]" }}>
+            <NavLink to="/company" className={({ isActive }) => { return isActive ? "flex gap-[0.662109375vw] h-[42.43px] transition duration-350 items-center px-[1vw] rounded-[9px] bg-white text-primary" : "text-white flex gap-[0.662109375vw] h-[42.43px] transition duration-350 items-center px-[1vw] hover:bg-white hover:text-primary rounded-[9px]" }}>
               <svg className='fill-current w-[23px]' width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" clipRule="evenodd" d="M0 19.2004C0 18.7586 0.358176 18.4004 0.799999 18.4004H23.2C23.6418 18.4004 24 18.7586 24 19.2004C24 19.6422 23.6418 20.0004 23.2 20.0004H0.799999C0.358176 20.0004 0 19.6422 0 19.2004Z" />
                 <path fillRule="evenodd" clipRule="evenodd" d="M2.06824 0.468632C2.3683 0.168568 2.77526 0 3.19961 0H12.7996C13.2239 0 13.6309 0.168568 13.931 0.468632C14.231 0.768687 14.3996 1.17566 14.3996 1.6V19.2C14.3996 19.6418 14.0414 20 13.5996 20C13.1578 20 12.7996 19.6418 12.7996 19.2V1.6H3.19961V19.2C3.19961 19.6418 2.84143 20 2.39961 20C1.95779 20 1.59961 19.6418 1.59961 19.2V1.6C1.59961 1.17566 1.76818 0.768687 2.06824 0.468632Z" />
