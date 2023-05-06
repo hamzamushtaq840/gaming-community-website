@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { ImCross } from 'react-icons/im'
-import addPicture from '../../assets/addPicture.svg'
+import addPicture from '../../../assets/addPicture.svg'
 
 const EditTeamProfileModal = ({ setModal }) => {
     const [file, setFile] = useState(null)

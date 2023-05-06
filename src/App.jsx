@@ -14,7 +14,7 @@ import SignupCommunity from "./pages/SignupCommunity"
 import SignupMain from "./pages/SignupMain"
 import TeamProfile from "./pages/TeamProfile"
 import ProfileAnalytics from "./components/Profile/ProfileAnalytics"
-
+import AllTeams from "./components/TeamProfile/AllTeams"
 
 export default function App() {
   return (
@@ -42,6 +42,7 @@ export default function App() {
           </Route>
           <Route path="/team-profile">
             <Route index element={<TeamProfile />}></Route>
+            <Route path="allTeams" element={<AllTeams />}></Route>
           </Route>
         </Route >
       </Routes >

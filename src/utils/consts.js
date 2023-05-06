@@ -14,6 +14,8 @@ import JobListing1 from "../assets/JobListing1.svg"
 import JobListing2 from "../assets/JobListing2.svg"
 import JobListing3 from "../assets/JobListing3.svg"
 import JobListing4 from "../assets/JobListing4.svg"
+import userProfileLogo from '../assets/userProfileLogo.svg'
+import user from '../assets/user.svg'
 
 export const communityGoalsCardsData = [
   {
@@ -207,3 +209,62 @@ export const selectOptions = [
   { value: 'option2', label: 'Option 2' },
   { value: 'option3', label: 'Option 3' },
 ];
+
+export const allTeams = [
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+  {
+    id: Math.random(),
+    teamImage: userProfileLogo,
+    teamName: 'Team Profile 1',
+    teamDescription: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam.',
+    teamsMembers: [{ name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }, { name: 'Hamza', profilePicture: user }]
+  },
+]

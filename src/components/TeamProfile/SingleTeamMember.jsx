@@ -3,7 +3,7 @@ import user from './../../assets/user.svg'
 import { MdEdit } from 'react-icons/md'
 import { ImCross } from 'react-icons/im'
 import arrow from './../../assets/arrow.svg'
-import EditTeamMemberModal from './EditTeamMemberModal'
+import EditTeamMemberModal from './Modals/EditTeamMemberModal'
 
 const SingleTeamMember = ({ value }) => {
     const [seeMore, setSeeMore] = useState(false)

@@ -3,7 +3,7 @@ import user from './../../assets/user.svg'
 import { MdEdit } from 'react-icons/md'
 import { ImCross } from 'react-icons/im'
 import arrow from './../../assets/arrow.svg'
-import EditPreviousProjectModal from './EditPreviousProjectModal'
+import EditPreviousProjectModal from './Modals/EditPreviousProjectModal'
 
 const SinglePreviousProject = ({ value }) => {
     const [seeMore, setSeeMore] = useState(false)
