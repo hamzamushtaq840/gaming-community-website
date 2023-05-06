@@ -191,7 +191,7 @@ export default function Layout() {
                           <NavLink to={'/profile/manage'} className={({ isActive }) => isActive ? "bg-primary rounded-[9px]" : ""}>
                             <p className='w-[186px] h-[40px] bg-inherit text-left pl-[22px] flex items-center text-white rounded-[9px]'>Manage Profile</p>
                           </NavLink>
-                          <NavLink to={''} className={({ isActive }) => isActive ? "bg-primary" : ""}>
+                          <NavLink to={'/profile/security'} className={({ isActive }) => isActive ? "bg-primary rounded-[9px]" : ""}>
                             <p className='w-[186px] h-[40px] bg-inherit text-left pl-[22px] flex items-center text-white rounded-[9px]'>Security</p>
                           </NavLink>
                         </div>

@@ -17,6 +17,7 @@ import ProfileAnalytics from "./components/Profile/ProfileAnalytics"
 import AllTeams from "./components/TeamProfile/AllTeams"
 import ProfileShare from "./components/Profile/ProfileShare"
 import ProfilePage from "./components/Profile/ProfilePage"
+import ProfileSecurity from "./components/Profile/ProfileSecurity"
 
 export default function App() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
           <Route path="/profile" element={<Profile></Profile>}>
             <Route index element={<ViewProfile></ViewProfile>}></Route>
             <Route path="manage" element={<ManageProfile></ManageProfile>}></Route>
+            <Route path="security" element={<ProfileSecurity></ProfileSecurity>}></Route>
             <Route path="analytics" element={<ProfileAnalytics></ProfileAnalytics>}></Route>
             <Route path="pages" element={<ProfilePage></ProfilePage>}></Route>
             <Route path="share" element={<ProfileShare></ProfileShare>}></Route>
