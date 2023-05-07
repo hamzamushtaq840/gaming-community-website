@@ -19,6 +19,7 @@ import ProfileShare from "./components/Profile/ProfileShare"
 import ProfilePage from "./components/Profile/ProfilePage"
 import ProfileSecurity from "./components/Profile/ProfileSecurity"
 import Company from "./pages/Company"
+import CompanyInformation from "./components/Company/CompanyInformation"
 
 export default function App() {
   return (
@@ -47,8 +48,9 @@ export default function App() {
             <Route path="pages" element={<ProfilePage></ProfilePage>}></Route>
             <Route path="share" element={<ProfileShare></ProfileShare>}></Route>
           </Route>
-          <Route path="/company" element={<Company></Company>}>
-            
+          <Route path="/company" >
+            <Route index element={<Company></Company>}></Route>
+            <Route path=":id" element={<CompanyInformation></CompanyInformation>}></Route>
           </Route>
           <Route path="/team-profile">
             <Route index element={<TeamProfile />}></Route>
