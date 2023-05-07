@@ -1,10 +1,11 @@
 import React from 'react'
 import CompanyRecommendation from '../components/Company/CompanyRecommendation'
+import ComapnyResult from '../components/Company/ComapnyResult'
 
 export default function Company() {
   return (
-    <div className='dark:text-white dark:bg-black pr-[10.989583333333334vw] min-h-[calc(100vh-72px)] pl-[10.9375vw]'>
-      <h3 className='pt-[63px] font-[700] text-[34px] text-center'>Company</h3>
+    <div className='dark:text-white dark:bg-black pr-[10.989583333333334vw] min-h-[calc(100vh-72px)] pl-[10.9375vw] pb-[97px]'>
+      <h3 className='pt-[63px] font-[700] text-[34px] text-center mb-[40px]'>Company</h3>
 
       <div className='flex gap-[30px]'>
         <div className='w-[272px]'>
@@ -84,7 +85,8 @@ export default function Company() {
           </div>
 
           <div className='mt-[57px]'>
-            <CompanyRecommendation/>
+            {/* <CompanyRecommendation/> */}
+            <ComapnyResult/>
           </div>
         </div>
       </div>

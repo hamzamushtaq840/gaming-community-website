@@ -28,7 +28,7 @@ export default function CompanyRecommendation() {
             <p className='font-[400] text-[12px] leading-[12px]'>Beirut, Lebanon</p>
           </div>
           <p className='font-[400] text-[12px] leading-[17.76px]'>Game Cooks is an indie game developer of casual VR games focused on the MENA (Middle East North Africa) region. It has developed multiple VR games including "HOVR" and an FPS game known as "VINDICTA". The games are available on Google Play store, Apple store, Oculus Store and Steam. It generates revenue through paid games and in-app purchases.</p>
-          <button className='border-[1px] border-[rgba(255,255,255,0.7)] w-[135px] h-[30px] bg-transparent rounded-[9px] font-[400] text-[12px] leading-[16.14px] mt-[34px] mb-[27px]'>AR/VR Development</button>
+          <button className='border-[1px] border-[rgba(255,255,255,0.7)] text-[rgba(255,255,255,0.7)] w-[135px] h-[30px] bg-transparent rounded-[9px] font-[400] text-[12px] leading-[16.14px] mt-[34px] mb-[27px]'>AR/VR Development</button>
         </div>
         
         <div className='bg-[rgba(255,255,255,0.2)] rounded-[9px] min-h-[323px] pl-[29px] pr-[25px]'>
@@ -52,7 +52,7 @@ export default function CompanyRecommendation() {
             <p className='font-[400] text-[12px] leading-[12px]'>Beirut, Lebanon</p>
           </div>
           <p className='font-[400] text-[12px] leading-[17.76px]'>Game Cooks is an indie game developer of casual VR games focused on the MENA (Middle East North Africa) region. It has developed multiple VR games including "HOVR" and an FPS game known as "VINDICTA". The games are available on Google Play store, Apple store, Oculus Store and Steam. It generates revenue through paid games and in-app purchases.</p>
-          <button className='border-[1px] border-[rgba(255,255,255,0.7)] w-[135px] h-[30px] bg-transparent rounded-[9px] font-[400] text-[12px] leading-[16.14px] mt-[34px] mb-[27px]'>AR/VR Development</button>
+          <button className='border-[1px] border-[rgba(255,255,255,0.7)] text-[rgba(255,255,255,0.7)] w-[135px] h-[30px] bg-transparent rounded-[9px] font-[400] text-[12px] leading-[16.14px] mt-[34px] mb-[27px]'>AR/VR Development</button>
         </div>
 
         <div className='bg-[rgba(255,255,255,0.2)] rounded-[9px] min-h-[323px] pl-[29px] pr-[25px]'>
@@ -76,7 +76,7 @@ export default function CompanyRecommendation() {
             <p className='font-[400] text-[12px] leading-[12px]'>Beirut, Lebanon</p>
           </div>
           <p className='font-[400] text-[12px] leading-[17.76px]'>Game Cooks is an indie game developer of casual VR games focused on the MENA (Middle East North Africa) region. It has developed multiple VR games including "HOVR" and an FPS game known as "VINDICTA". The games are available on Google Play store, Apple store, Oculus Store and Steam. It generates revenue through paid games and in-app purchases.</p>
-          <button className='border-[1px] border-[rgba(255,255,255,0.7)] w-[135px] h-[30px] bg-transparent rounded-[9px] font-[400] text-[12px] leading-[16.14px] mt-[34px] mb-[27px]'>AR/VR Development</button>
+          <button className='border-[1px] border-[rgba(255,255,255,0.7)] text-[rgba(255,255,255,0.7)] w-[135px] h-[30px] bg-transparent rounded-[9px] font-[400] text-[12px] leading-[16.14px] mt-[34px] mb-[27px]'>AR/VR Development</button>
         </div>
 
         <div className='bg-[rgba(255,255,255,0.2)] rounded-[9px] min-h-[323px] pl-[29px] pr-[25px]'>
@@ -100,7 +100,7 @@ export default function CompanyRecommendation() {
             <p className='font-[400] text-[12px] leading-[12px]'>Beirut, Lebanon</p>
           </div>
           <p className='font-[400] text-[12px] leading-[17.76px]'>Game Cooks is an indie game developer of casual VR games focused on the MENA (Middle East North Africa) region. It has developed multiple VR games including "HOVR" and an FPS game known as "VINDICTA". The games are available on Google Play store, Apple store, Oculus Store and Steam. It generates revenue through paid games and in-app purchases.</p>
-          <button className='border-[1px] border-[rgba(255,255,255,0.7)] w-[135px] h-[30px] bg-transparent rounded-[9px] font-[400] text-[12px] leading-[16.14px] mt-[34px] mb-[27px]'>AR/VR Development</button>
+          <button className='border-[1px] border-[rgba(255,255,255,0.7)] text-[rgba(255,255,255,0.7)] w-[135px] h-[30px] bg-transparent rounded-[9px] font-[400] text-[12px] leading-[16.14px] mt-[34px] mb-[27px]'>AR/VR Development</button>
         </div>
 
       </div>
