@@ -20,6 +20,7 @@ import ProfilePage from "./components/Profile/ProfilePage"
 import ProfileSecurity from "./components/Profile/ProfileSecurity"
 import Company from "./pages/Company"
 import CompanyInformation from "./components/Company/CompanyInformation"
+import CompanyAdd from "./components/Company/CompanyAdd"
 
 export default function App() {
   return (
@@ -51,6 +52,7 @@ export default function App() {
           <Route path="/company" >
             <Route index element={<Company></Company>}></Route>
             <Route path=":id" element={<CompanyInformation></CompanyInformation>}></Route>
+            <Route path="add" element={<CompanyAdd></CompanyAdd>}></Route>
           </Route>
           <Route path="/team-profile">
             <Route index element={<TeamProfile />}></Route>
