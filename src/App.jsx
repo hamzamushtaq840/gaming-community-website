@@ -21,6 +21,11 @@ import ProfileSecurity from "./components/Profile/ProfileSecurity"
 import Company from "./pages/Company"
 import CompanyInformation from "./components/Company/CompanyInformation"
 import CompanyAdd from "./components/Company/CompanyAdd"
+import CompanyManageLayout from "./components/Company/CompanyManageLayout"
+import CompanyManage from "./components/Company/CompanyManage"
+import CompanyAnalytics from "./components/Company/CompanyAnalytics"
+import CompanyShare from "./components/Company/CompanyShare"
+import CompanyPages from "./components/Company/CompanyPages"
 
 export default function App() {
   return (
@@ -53,6 +58,12 @@ export default function App() {
             <Route index element={<Company></Company>}></Route>
             <Route path=":id" element={<CompanyInformation></CompanyInformation>}></Route>
             <Route path="add" element={<CompanyAdd></CompanyAdd>}></Route>
+            <Route path="manage" element={<CompanyManageLayout></CompanyManageLayout>}>
+              <Route index element={<CompanyManage></CompanyManage>}></Route>
+              <Route path="analytics" element={<CompanyAnalytics></CompanyAnalytics>}></Route>
+              <Route path="pages" element={<CompanyPages></CompanyPages>}></Route>
+              <Route path="share" element={<CompanyShare></CompanyShare>}></Route>
+            </Route>
           </Route>
           <Route path="/team-profile">
             <Route index element={<TeamProfile />}></Route>
