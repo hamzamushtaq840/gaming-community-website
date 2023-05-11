@@ -5,7 +5,7 @@ import Rectangle79 from "../../assets/Rectangle 79.png"
 
 export default function CompanyInformation() {
   return (
-    <div style={{ gridTemplateColumns: "43.177vw 1fr" }} className='dark:text-white dark:bg-black pr-[10.989583333333334vw] min-h-[calc(100vh-72px)] pl-[10.9375vw] grid grid-cols-2 gap-[27px] pt-[65px] pb-[115px]'>
+    <div style={{ gridTemplateColumns: "43.177vw 1fr" }} className='dark:text-white dark:bg-black pr-[10.98%] pl-[10.93%] min-h-[calc(100vh-72px)] grid grid-cols-2 gap-[27px] pt-[65px] pb-[115px]'>
       <div className=''>
         <div className='w-full min-h-[416px] bg-[rgba(255,255,255,0.15)] rounded-[9px] divide-y-2 divide-[rgba(255,255,255,0.15)]'>
           <div className='flex items-center justify-between px-[67px] py-[37px]'>

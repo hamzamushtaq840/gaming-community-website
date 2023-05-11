@@ -6,14 +6,12 @@ export default function ComapnyResult() {
     <div>
       <h4 className='font-[700] text-[24px] leading-[24px]'>Showing <span className='text-primary'>6</span> results</h4>
       <div className='grid grid-cols-1 gap-[15px] pt-[34px]'>
-
         <div className='bg-[rgba(255,255,255,0.2)] rounded-[9px] min-h-[238px] pl-[23px] pr-[25px]'>
           <div className='flex justify-between mt-[27px]'>
             <div className='flex items-center gap-[18px]'>
               <img src={companyRecommendation}></img>
               <div className='flex flex-col gap-[11px]'>
                 <h5 className='text-primary font-[700] text-[16px] leading-[16px]'>Game Cooks</h5>
-
                 <div className='flex gap-[7.5px] items-center'>
                   <svg width="14" height="17" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.08594 10.7812C9.57213 10.7812 10.7812 9.57213 10.7812 8.08594C10.7812 6.59974 9.57213 5.39062 8.08594 5.39062C6.59974 5.39062 5.39062 6.59974 5.39062 8.08594C5.39062 9.57213 6.59974 10.7812 8.08594 10.7812ZM8.08594 7.1875C8.58134 7.1875 8.98438 7.59054 8.98438 8.08594C8.98438 8.58134 8.58134 8.98438 8.08594 8.98438C7.59054 8.98438 7.1875 8.58134 7.1875 8.08594C7.1875 7.59054 7.59054 7.1875 8.08594 7.1875Z" fill="white" />
@@ -129,8 +127,6 @@ export default function ComapnyResult() {
             <button className='border-[1px] border-[rgba(255,255,255,0.7)] text-[rgba(255,255,255,0.7)] px-[12px] min-h-[30px] bg-transparent rounded-[9px] font-[400] text-[12px] leading-[16.14px]'>IoT Development</button>
           </div>
         </div>
-
-
       </div>
     </div>
   )
