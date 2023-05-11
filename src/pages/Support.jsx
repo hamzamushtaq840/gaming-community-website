@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Aboutus() {
+export default function Support() {
   return (
     <div className='dark:text-white dark:bg-black pr-[10.98%] pl-[10.93%] min-h-[calc(100vh-72px)]'>
-      <h3 className='text-center font-bold text-[34px] leading-[34px] pt-[64px] mb-[40px]'>About us</h3>
+      <h3 className='text-center font-bold text-[34px] leading-[34px] pt-[64px] mb-[40px]'>Help / Support</h3>
       <div className='bg-[rgba(255,255,255,0.15)] rounded-[9px] flex flex-col'>
         <Link className='self-end mr-[24px] mt-[24px]' to={'/about/edit'}>
           <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">

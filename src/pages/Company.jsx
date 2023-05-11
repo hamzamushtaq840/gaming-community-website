@@ -4,7 +4,7 @@ import ComapnyResult from '../components/Company/ComapnyResult'
 
 export default function Company() {
   return (
-    <div className='dark:text-white dark:bg-black pr-[10.989583333333334vw] min-h-[calc(100vh-72px)] pl-[10.9375vw] pb-[97px]'>
+    <div className='dark:text-white dark:bg-black pr-[10.98%] pl-[10.93%] min-h-[calc(100vh-72px)] pb-[97px]'>
       <h3 className='pt-[63px] font-[700] text-[34px] text-center mb-[40px]'>Company</h3>
 
       <div className='flex gap-[30px]'>
@@ -52,7 +52,6 @@ export default function Company() {
               </div>
             </div>
           </div>
-
         </div>
         <div className='flex-1'>
           <div className='flex relative h-[57px]'>
