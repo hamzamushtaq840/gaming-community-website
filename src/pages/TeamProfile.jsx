@@ -21,7 +21,7 @@ export default function TeamProfileHeader() {
   const [editTeamProfileModal, setEditTeamProfileModal] = useState(false)
 
   return (
-    <div className='dark:bg-black dark:text-white bg-white text-black justify-center flex px-[10.9vw] xsm:px-[6vw] sm:px-[6vw] font-helvetica'>
+    <div className='dark:bg-black dark:text-white bg-white text-black justify-center flex pb-10 px-[10.9vw] xsm:px-[6vw] sm:px-[6vw] font-helvetica'>
       <div className='w-full'>
         <div className='w-full relative'>
           <div className='userProfileHeader h-[225px] mt-[66px] z-10 flex flex-col '>
@@ -60,27 +60,27 @@ export default function TeamProfileHeader() {
             </div>
             <div className='py-[1px] dark:bg-[#FFFFFF] bg-black mb-3 opacity-[0.15]'></div>
             <div className='flex justify-around mb-[21px] items-center'>
-              <NavLink to='/team-profile/allTeams' className='buttonAnimation cursor-pointer flex gap-[8.43px] items-center'>
+              <NavLink to='/team-profile/allTeams' className='flex gap-[8.43px] buttonAnimation cursor-pointer items-center'>
                 <img src={allTeams} alt="All Teams" className='cursor-pointer w-[24.57px] gap-[7.43px]' />
                 <p className='text-custom-14 md:hidden xsm:hidden sm:hidden mb-[-3px]'>All Teams</p>
               </NavLink>
-              <NavLink to='/team-profile/allTeams' className='flex gap-[8.43px] items-center'>
+              <NavLink to='/team-profile/admins' className='flex gap-[8.43px] buttonAnimation cursor-pointer items-center'>
                 <img src={admins} alt="All Teams" className='cursor-pointer w-[24.57px] gap-[7.43px]' />
                 <p className='text-custom-16 md:hidden xsm:hidden sm:hidden mb-[-3px]'>Admins</p>
               </NavLink>
-              <div className='flex gap-[8.43px] items-center'>
+              <NavLink to='/team-profile/member' className='flex gap-[8.43px] buttonAnimation cursor-pointer items-center'>
                 <img src={viewAsMember} alt="All Teams" className='cursor-pointer w-[28.57px] gap-[7.43px]' />
                 <p className='text-custom-16 md:hidden xsm:hidden sm:hidden mb-[-3px]'>View As Member</p>
-              </div>
-              <div className='flex gap-[8.43px] items-center'>
+              </NavLink>
+              <div className='flex gap-[8.43px] buttonAnimation cursor-pointer items-center'>
                 <img src={shareTeam} alt="All Teams" className='cursor-pointer w-[24.57px] gap-[7.43px]' />
                 <p className='text-custom-16 md:hidden xsm:hidden sm:hidden mb-[-3px]'>Share Team</p>
               </div>
-              <div className='flex gap-[8.43px] items-center'>
+              <div className='flex gap-[8.43px] buttonAnimation cursor-pointer items-center'>
                 <img src={analytics} alt="All Teams" className='cursor-pointer w-[24.57px] gap-[7.43px]' />
                 <p className='text-custom-16 md:hidden xsm:hidden sm:hidden mb-[-3px]'>Analytics</p>
               </div>
-              <div className='flex gap-[8.43px] items-center'>
+              <div className='flex gap-[8.43px] buttonAnimation cursor-pointer items-center'>
                 <img src={pages} alt="All Teams" className='cursor-pointer w-[24.57px] gap-[7.43px]' />
                 <p className='text-custom-16 md:hidden xsm:hidden sm:hidden mb-[-2px]'>Pages</p>
               </div>
