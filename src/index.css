@@ -19,6 +19,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   max-width: 1920px;
+  max-height: 100vh;
 }
 
 .signupbg {
@@ -54,30 +55,45 @@ body {
   height: 50%;
   background-color: #2C2C2C;
   opacity: 0.7;
-  box-shadow: 0px 10px 10px rgba(44, 44, 44, 0.941);
+  box-shadow: 0px 10px 10px rgba(44, 44, 44, 0.29);
   z-index: 100;
 }
 
 /* width */
 ::-webkit-scrollbar {
   width: 4px;
+  background-color: rgba(0, 0, 0, 0.454);
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #EC1F26;
+  background: #5702028c;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #e76060;
-  border-radius: 100px;
+  background: #ff0000;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #a8a8a8;
+  background: #cd3636;
 }
+
+/* for filter div in allTeams */
+.filterDiv::-webkit-scrollbar-thumb:hover {
+  background: #cd3636;
+}
+
+.filterDiv::-webkit-scrollbar-track {
+  background: #5702028c;
+}
+
+.filterDiv::-webkit-scrollbar {
+  /* width: 4px; */
+  height: 5px;
+}
+
 
 /* for every modal  */
 .modalBackground {
@@ -105,6 +121,22 @@ body {
   animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
 }
 
+.modal {
+  animation-name: animateModal2;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+@keyframes animateModal2 {
+  0% {
+    top: -1090px;
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
 @keyframes animateModal {
   0% {
     top: -20px;
@@ -129,13 +161,34 @@ body {
   top: 4px;
 }
 
+/* for select in public profile all teams */
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   background-image: url('data:image/svg+xml;utf8,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10.127L12 18.127L20 10.127H4Z" fill="%238E8E93"/></svg>');
   background-repeat: no-repeat;
   background-position-y: 40%;
   background-position-x: 98%;
   padding: 0 30px 0 15px;
   overflow: hidden;
+}
+
+input[type='radio'] {
+  accent-color: #ff0c0c;
+}
+
+input[type='checkbox'] {
+  accent-color: #ff0c0c;
+  border-radius: 10px;
+}
+
+.ellipsisShow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Number of lines to show before adding ellipsis */
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }

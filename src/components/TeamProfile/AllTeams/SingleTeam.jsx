@@ -1,9 +1,9 @@
 import React from 'react'
-import options from './../../assets/options.svg'
+import options from './../../../assets/options.svg'
 
 const SingleTeam = ({ value }) => {
     return (
-        <div className='rounded-[9px] bg-[rgba(255,255,255,0.2)] p-[24px]'>
+        <div className='rounded-[9px] bg-white dark:bg-[rgba(255,255,255,0.2)] p-[24px]'>
             <div className='flex justify-between items-start mb-[28px]'>
                 <img src={value.teamImage} className='w-[70px] h-[70px]' alt="" />
                 <img src={options} className='cursor-pointer' alt="" />
