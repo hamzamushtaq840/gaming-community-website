@@ -32,6 +32,10 @@ import SingleMentorDetail from "./components/Mentor/SingleMentorDetail"
 import SingleMentorAvalibility from "./components/Mentor/SingleMentorAvalibility"
 import SingleMentorAbout from "./components/Mentor/SingleMentorAbout"
 import SingleInvestorDetail from "./components/Investor/SingleInvestorDetail"
+import ProfileSecurity from "./components/Profile/ProfileSecurity"
+import Company from "./pages/Company"
+import CompanyInformation from "./components/Company/CompanyInformation"
+import CompanyAdd from "./components/Company/CompanyAdd"
 
 export default function App() {
   return (
@@ -56,11 +60,11 @@ export default function App() {
           <Route path="/profile" element={<Profile></Profile>}>
             <Route index element={<ViewProfile></ViewProfile>}></Route>
             <Route path="manage" element={<ManageProfile></ManageProfile>}></Route>
+            <Route path="security" element={<ProfileSecurity></ProfileSecurity>}></Route>
             <Route path="analytics" element={<ProfileAnalytics></ProfileAnalytics>}></Route>
             <Route path="pages" element={<ProfilePage></ProfilePage>}></Route>
             <Route path="share" element={<ProfileShare></ProfileShare>}></Route>
           </Route>
-          {/* Team Profile */}
           <Route path="/team-profile">
             <Route index element={<TeamProfile />}></Route>
             <Route path="allTeams" element={<AllTeams />}></Route>
