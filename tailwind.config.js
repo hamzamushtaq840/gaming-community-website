@@ -18,7 +18,7 @@ export default {
       },
       fontSize: {
         'custom-10': 'clamp(9px,0.5208333333333334vw,10px)',
-        'custom-12': 'clamp(11px,0.625vw,12px)',
+        'custom-12': 'clamp(12px,0.625vw,12px)',
         'custom-14': 'clamp(12px,0.7291666666666666vw,14px)',
         'custom-16': 'clamp(13px,0.8333333333333334vw,16px)',
         'custom-18': 'clamp(16px,0.9375vw,18px)',

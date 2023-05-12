@@ -6,7 +6,7 @@ import companyRecommendation from "../../assets/companyRecommendation.png"
 
 export default function JobInformation() {
   return (
-    <div style={{ gridTemplateColumns: "43.177vw 1fr" }} className='dark:text-white dark:bg-black pr-[10.98%] pl-[10.93%] min-h-[calc(100vh-72px)] grid grid-cols-2 gap-[27px] pt-[65px] pb-[115px]'>
+    <div style={{ gridTemplateColumns: "43.177vw 1fr" }} className='dark:text-white dark:bg-black pr-[10.98%] pl-[10.93%] min-h-[calc(100vh-72px)] grid grid-cols-2 gap-[27px] pt-[64px] pb-[115px]'>
       <div className=''>
         <div className='w-full min-h-[303px] bg-[rgba(255,255,255,0.15)] rounded-[9px] divide-y-2 divide-[rgba(255,255,255,0.15)]'>
           <div className='flex items-center justify-between px-[67px] py-[28px] divide-y divide-[rgba(255,255,255,0.15)]'>
@@ -130,7 +130,7 @@ export default function JobInformation() {
                 </div>
               </div>
             </div>
-            
+
             <div className='flex gap-[18px] items-center'>
               <div className=''>
                 <img src={Rectangle79} />

@@ -149,8 +149,75 @@ const SubmitEvent = () => {
         </aside>
         {/* right section */}
         <main className='bg-white divide-y-[0.1px] divide-[#cccccc94] rounded-[9px] xsm:w-full sm:w-full flex-1 dark:bg-[rgba(255,255,255,0.2)]'>
-          <p className='text-custom-24 px-[1.6666666666666667vw] xsm:px-[20px] sm:px-[20px] xsm:py-[15px] sm:py-[15px] py-[26px] font-[700]'>NEW EVENT</p>
+          <p className='text-custom-24 px-[93px] xsm:px-[20px] sm:px-[20px] xsm:py-[15px] sm:py-[15px] py-[26px] font-[700]'>New Event</p>
+          <div className='flex flex-col pt-[24px] px-[93px] pb-[83px] xsm:px-[20px] sm:px-[20px] gap-[22px]'>
+            <div className='flex-1 flex flex-col gap-[15px]'>
+              <label className='text-[rgba(255,255,255,0.5)] font-[700] text-[16px] leading-[16px]'>Organization Title</label>
+              <input className='w-full h-[48px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden bg-transparent indent-[22px]' placeholder='Add the title you are hiring for'></input>
+            </div>
+            <div className='flex-1 flex flex-col gap-[15px]'>
+              <label className='text-[rgba(255,255,255,0.5)] font-[700] text-[16px] leading-[16px]'>Event Name*</label>
+              <input className='w-full h-[48px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden bg-transparent indent-[22px]' placeholder='Event Name'></input>
+            </div>
+            <div className='flex flex-col gap-[15px]'>
+              <label className='text-[rgba(255,255,255,0.5)] font-[700] text-[16px] leading-[16px]'>Image</label>
+              <div className='w-full h-[48px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden'>
+                <input className='flex-1 bg-transparent indent-[22px]' placeholder='Text'></input>
+                <button className='w-[134px] h-full bg-primary'>Upload Image</button>
+              </div>
+            </div>
+            <div className='flex-1 flex flex-col gap-[15px]'>
+              <label className='text-[rgba(255,255,255,0.5)] font-[700] text-[16px] leading-[16px]'>Location</label>
+              <input className='w-full h-[48px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden bg-transparent indent-[22px]' placeholder='Text'></input>
+            </div>
+            <div className='flex-1 flex flex-col gap-[15px]'>
+              <label className='text-[rgba(255,255,255,0.5)] font-[700] text-[16px] leading-[16px]'>Google Map Location (optional)</label>
+              <input className='w-full h-[48px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden bg-transparent indent-[22px]' placeholder='Text'></input>
+            </div>
+            <div className='flex-1 flex flex-col gap-[15px]'>
+              <label className='text-[rgba(255,255,255,0.5)] font-[700] text-[16px] leading-[16px]'>External Job Application Form</label>
+              <input className='w-full h-[48px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden bg-transparent indent-[22px]' placeholder='Add a company'></input>
+            </div>
+            <div className='flex gap-[21px]'>
+              <div className='flex-1 flex flex-col gap-[15px]'>
+                <label className='text-[rgba(255,255,255,0.5)] font-[700] text-[16px] leading-[16px]'>Start Time*</label>
+                <input className='w-full h-[48px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden bg-transparent indent-[22px]' placeholder='Add a company'></input>
+              </div>
+              <div className='flex-1 flex flex-col gap-[15px] justify-end'>
+                <input className='w-full h-[48px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden bg-transparent indent-[22px]' placeholder='Add a company'></input>
+              </div>
+            </div>
+            <div className='flex gap-[21px]'>
+              <div className='flex-1 flex flex-col gap-[15px]'>
+                <label className='text-[rgba(255,255,255,0.5)] font-[700] text-[16px] leading-[16px]'>End Time*</label>
+                <input className='w-full h-[48px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden bg-transparent indent-[22px]' placeholder='Add a company'></input>
+              </div>
+              <div className='flex-1 flex flex-col gap-[15px] justify-end'>
+                <input className='w-full h-[48px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden bg-transparent indent-[22px]' placeholder='Add a company'></input>
+              </div>
+            </div>
+            <div className='flex-1 flex flex-col gap-[15px]'>
+              <label className='text-[rgba(255,255,255,0.5)] font-[700] text-[16px] leading-[16px]'>Description</label>
+              <input className='w-full h-[315px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden bg-transparent indent-[22px]' placeholder='Text'></input>
+            </div>
 
+            <div className='flex-1 flex flex-col gap-[15px]'>
+              <label className='text-[rgba(255,255,255,0.5)] font-[700] text-[16px] leading-[16px]'>External Registration Link</label>
+              <input className='w-full h-[48px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden bg-transparent indent-[22px]' placeholder='Add a company'></input>
+            </div>
+            <div className='flex-1 flex flex-col gap-[15px]'>
+              <label className='text-[rgba(255,255,255,0.5)] font-[700] text-[16px] leading-[16px]'>Tickets (optional)</label>
+              <input className='w-full h-[48px] border border-[rgba(255,255,255,0.25)] rounded-[9px] flex overflow-hidden bg-transparent indent-[22px]' placeholder='Add a company'></input>
+            </div>
+            <div className='flex gap-[2.65625vw] space-between'>
+              <button className='w-full h-[48px] bg-[#828282] rounded-[9px] mt-[23px] flex justify-center items-center gap-[10px] mb-[10px]'>
+                Reset
+              </button>
+              <button className='w-full h-[48px] bg-primary rounded-[9px] mt-[23px] flex justify-center items-center gap-[10px] mb-[10px]'>
+                Submit
+              </button>
+            </div>
+          </div>
         </main>
       </div>
     </div>

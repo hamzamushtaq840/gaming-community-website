@@ -1,20 +1,23 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
-import logoplaceholder from "../assets/logoplaceholder.svg"
-import LayoutDashboard from "../assets/LayoutDashboard.png"
+import { BsSearch } from 'react-icons/bs'
+import { CgHome } from 'react-icons/cg'
+import { ImStack } from 'react-icons/im'
+import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import NavbarFavorite from "../assets/NavbarFavorite.svg"
+import NavbarMegaphone from "../assets/NavbarMegaphone.svg"
+import user from "../assets/user.svg"
 import NavbarMessage from "../assets/NavbarMessage.svg"
 import NavbarNotification from "../assets/NavbarNotification.svg"
 import NavbarProfile from "../assets/NavbarProfile.png"
-import Polygon from "../assets/Polygon.png"
-import NavbarMegaphone from "../assets/NavbarMegaphone.svg"
-import { CgHome } from 'react-icons/cg'
-import { BsSearch } from 'react-icons/bs'
-import { ImStack } from 'react-icons/im'
+import logoplaceholder from "../assets/logoplaceholder.svg"
+import NotificationModal from './NotificationModal'
 
 export default function Layout() {
-
   const [showDropDown, setShowDropDown] = useState(false);
+  const [showNotification, setShowNotification] = useState(false);
+  const [notificationModal, setNotificationModal] = useState(false);
+  const [notification, setNotification] = useState([1, 2])
+  const navigate = useNavigate()
 
   const hideDropDown = () => {
     setShowDropDown(false)
@@ -30,7 +33,7 @@ export default function Layout() {
 
   return (
     <div className='flex relative'>
-      <div className='w-[12.8125vw] relative z-[1000] min-h-[100vh] max-h-[100vh] min-w-[216px] bg-primary xsm:hidden sm:hidden md:hidden '>
+      <aside onClick={() => setShowNotification(false)} className='w-[12.8125vw] relative z-[1000] min-h-[100vh] max-h-[100vh] min-w-[216px] bg-primary xsm:hidden sm:hidden md:hidden '>
         <div className='px-[1.4973958333333333vw] pt-[31px] fixed w-[12.8125vw] min-h-[100vh] max-h-[100vh] min-w-[216px] bg-primary overflow-y-auto overflow-x-hidden'>
           <div className='pl-[0.9765625vw]'>
             <img className='w-[171px]' src={logoplaceholder} />
@@ -149,16 +152,15 @@ export default function Layout() {
             </NavLink>
           </div>
         </div>
-      </div>
+      </aside>
 
-      <div className='flex-1'>
+      <nav className='flex-1' >
         <div className='h-[72px] bg-[#F5F5F5] dark:bg-[#292636]'>
           <div className='mx-[2.4479166666666665vw] m-auto h-full flex items-center rounded-[9px] justify-between'>
             <div className='relative xsm:hidden'>
               <BsSearch className='w-[18.77px] h-[18px] absolute top-[50%] translate-y-[-50%] left-[18.77px] text-[#000000] dark:text-[#ffffff]' />
               <input className='w-[30.364583333333332vw]  rounded-[9px] h-[38px] indent-[48.15px] font-[400] text-[14px] leading-[14px] bg-[#ffffff] dark:bg-[#000000] text-[#000000] dark:text-[#ffffff]' placeholder='Search' />
             </div>
-
             <div className='flex gap-[3.0729166666666665vw] xsm:gap-0 xsm:w-full justify-between'>
               <div className='flex gap-[1.9270833333333333vw] xsm:gap-[3.0729166666666665vw]'>
                 <div className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center'>
@@ -167,23 +169,69 @@ export default function Layout() {
                 </div>
                 <div className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center'>
                   <ImStack className='text-[#000000] dark:text-[#ffffff] w-[23px] xsm:w-[17px] h-[23px]' />
-                  <p className='text-[#000000] dark:text-[#ffffff] font-[400] text-[14px] xsm:text-[12px] leading-[14px]'>Projects</p>
+                  <p className='text-[#000000] dark:text-[#ffffff] font-[400] text-[14px] xsm:text-[12px] leading-[14px] mt-[-1px]'>Projects</p>
                 </div>
-                <div className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center'>
-                  <img src={NavbarFavorite} className='text-[#000000] dark:text-[#ffffff] w-[23px] xsm:w-[13px] h-[23px]'></img>
+                <div className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center mt-[4px]'>
+                  <img src={NavbarFavorite} className='text-[#000000] dark:text-[#ffffff] w-[23px] xsm:w-[13px] h-[20px]'></img>
                   <p className='text-[#000000] dark:text-[#ffffff] font-[400] text-[14px] xsm:text-[12px] leading-[14px]'>Favorite</p>
                 </div>
+                <div className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center'>
+                  <img src={NavbarMegaphone} className='text-[#000000] dark:text-[#ffffff] w-[24px] xsm:w-[17px] h-[25.72px]'></img>
+                  <p className='text-[#000000] mt-[-2px] dark:text-[#ffffff] font-[400] text-[14px] xsm:text-[12px] leading-[14px]'>Advertise</p>
+                </div>
               </div>
-
               <div className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center'>
                 <img src={NavbarMessage} className='text-[#000000] dark:text-[#ffffff] w-[24.64px] xsm:w-[17px] h-[23px]'></img>
               </div>
-              <div className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center'>
-                <img src={NavbarNotification} className='text-[#000000] dark:text-[#ffffff] w-[24.64px] xsm:w-[17px] h-[23px]'></img>
+              <div className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center relative'>
+                <img src={NavbarNotification} onClick={(e) => { setShowNotification(!showNotification); e.stopPropagation() }} className='text-[#000000] cursor-pointer dark:text-[#ffffff] w-[24.64px] xsm:w-[17px] h-[23px]'></img>
+                {notification.length > 0 && <div className='h-[9px] w-[9.38px] bg-[#EC1F26] absolute rounded-full top-[10px] right-[2px]'></div>}
+                {showNotification &&
+                  <>
+                    <div onClick={(e) => e.stopPropagation()} className="transition-all  border-solid border-b-[#525252] border-b-[12px] border-x-transparent border-x-[12px] border-t-0 absolute z-[100000] top-[calc(100%+30px)]"></div>
+                    <div onClick={(e) => e.stopPropagation()} className='w-[18.333333333333332vw] min-w-[280px] bg-white dark:text-white text-black  dark:bg-[#525252] absolute z-[100000] rounded-[10px] top-[calc(100%+42px)] right-[-12px]'>
+                      <div className='m-auto divide-y-[1px] divide-[rgba(255,255,255,0.5)] flex w-full flex-col gap-[15px]'>
+                        <div className='flex py-[14.86px] px-[18px] gap-[11.06px] font-[700]'>
+                          <img src={NavbarNotification} onClick={(e) => { setShowNotification(!showNotification); e.stopPropagation() }} className='text-[#000000] cursor-pointer dark:text-[#ffffff] w-[24.64px] xsm:w-[17px] h-[23px]'></img>
+                          <div className='flex' onClick={() => navigate('/notification')}>
+                            <h1>Notifications </h1>
+                            <h1>&nbsp;({notification.length})</h1>
+                          </div>
+                        </div>
+                        {notification.map((val, index) => {
+                          return (
+                            <div className='flex items-center px-[16px] py-[15px]'>
+                              <img src={user} className='h-[44px] w-[44px] rounded-full mr-[9px]' alt="" />
+                              <div className='flex-1 flex flex-col gap-[4px]'>
+                                <p className='font-[400] ellipsisShow max-h-[45px] text-[12px]'><span className='font-[700]'>username: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis earum voluptates architecto culpa recusandae nulla dolorem similique, aliquam voluptatibus, modi minus velit, praesentium veritatis iure beatae accusamus veniam ea harum.</p>
+                                <p className='text-[12px] opacity-50'>12hr</p>
+                              </div>
+                              <div className='flex items-end h-full'>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <rect opacity="0.2" width="28" height="28" rx="5" fill="white" />
+                                </svg>
+                              </div>
+                            </div>
+                          )
+                        })}
+                        <div className='py-[14.86px] flex gap-[18px] px-[18px]'>
+                          <div>
+                            <svg width="19" height="16" viewBox="0 0 19 16" className='hover:cursor-pointer fill-white hover:fill-[#FF3434]' xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.5">
+                                <path d="M9.47135 13.4207C9.47135 13.7543 9.27866 14.0572 8.9771 14.1987C8.86051 14.2538 8.73557 14.2804 8.61145 14.2804C8.41489 14.2804 8.22016 14.2129 8.06287 14.0825L3.3629 10.1879H0.8597C0.384983 10.1883 0 9.80309 0 9.32837V5.9032C0 5.42828 0.384983 5.0433 0.8597 5.0433H3.36311L8.06307 1.14871C8.31986 0.935866 8.67595 0.89049 8.97731 1.03293C9.27866 1.17434 9.47156 1.47753 9.47156 1.81083L9.47135 13.4207ZM12.7752 12.0774C12.7543 12.0788 12.7341 12.0796 12.7134 12.0796C12.4863 12.0796 12.2674 11.9899 12.1056 11.8279L11.9906 11.7125C11.6891 11.4116 11.6537 10.9348 11.9076 10.5926C12.5514 9.72455 12.8912 8.69555 12.8912 7.61609C12.8912 6.45504 12.5054 5.36602 11.7753 4.46664C11.4974 4.12479 11.523 3.6283 11.8346 3.31698L11.9493 3.20202C12.1211 3.03028 12.3512 2.93668 12.6003 2.95153C12.8428 2.96374 13.0693 3.07789 13.2231 3.26591C14.2358 4.5051 14.7708 6.00962 14.7708 7.6163C14.7708 9.11268 14.2977 10.537 13.4024 11.7347C13.2528 11.9343 13.0241 12.0597 12.7752 12.0774ZM16.3296 14.7342C16.1742 14.9179 15.9493 15.0282 15.7086 15.0384C15.6968 15.0388 15.6848 15.0392 15.6726 15.0392C15.4449 15.0392 15.2264 14.9493 15.0646 14.7875L14.9517 14.6746C14.6361 14.3592 14.6147 13.8548 14.9016 13.5133C16.2881 11.8643 17.052 9.77013 17.052 7.61609C17.052 5.37558 16.2342 3.2187 14.7498 1.54284C14.4489 1.20263 14.4641 0.687621 14.7844 0.366124L14.8971 0.253193C15.0644 0.0851188 15.2817 -0.00746427 15.531 0.000471428C15.7676 0.00718625 15.9914 0.111775 16.1487 0.288802C17.943 2.30894 18.9313 4.91145 18.9313 7.61609C18.9317 10.2184 18.0077 12.7464 16.3296 14.7342Z" />
+                              </g>
+                            </svg>
+                          </div>
+                          <svg onClick={() => setNotificationModal(true)} className='hover:cursor-pointer fill-white hover:fill-[#FF3434]' width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.5" d="M13.1935 8.59071L12.9109 8.42786C12.5745 8.23446 12.3735 7.88732 12.3735 7.5C12.3735 7.11268 12.5745 6.76554 12.9109 6.57214L13.1935 6.40929C13.9651 5.96464 14.2289 4.98321 13.7835 4.21393L13.2462 3.28607C12.8018 2.51839 11.8136 2.25482 11.0442 2.69786L10.7616 2.86018C10.4252 3.05411 10.0227 3.05411 9.6869 2.86018C9.35054 2.66625 9.14958 2.31964 9.14958 1.93232V1.60714C9.14958 0.721071 8.42634 0 7.5376 0H6.46294C5.5742 0 4.85096 0.721071 4.85096 1.60714V1.93286C4.85096 2.32018 4.65 2.66679 4.31363 2.86071C3.97727 3.05411 3.57534 3.05464 3.23898 2.86071L2.95634 2.69786C2.18689 2.25482 1.19875 2.51839 0.75384 3.28607L0.216513 4.21393C-0.228932 4.98321 0.0348959 5.96518 0.806498 6.40929L1.08967 6.57214C1.42604 6.76554 1.627 7.11268 1.627 7.5C1.627 7.88732 1.42604 8.23446 1.08967 8.42786L0.807035 8.59071C0.0354332 9.03482 -0.228394 10.0168 0.21705 10.7861L0.754377 11.7139C1.19928 12.4816 2.18743 12.7452 2.95634 12.3021L3.23898 12.1398C3.57534 11.9454 3.97727 11.9464 4.31363 12.1398C4.65 12.3337 4.85096 12.6804 4.85096 13.0677V13.3929C4.85096 14.2789 5.5742 15 6.46294 15H7.5376C8.42634 15 9.14958 14.2789 9.14958 13.3929V13.0671C9.14958 12.6798 9.35054 12.3332 9.6869 12.1393C10.0227 11.9459 10.4252 11.9454 10.7616 12.1393L11.0442 12.3021C11.8136 12.7446 12.8018 12.4811 13.2462 11.7139L13.7835 10.7861C14.2289 10.0168 13.9651 9.03482 13.1935 8.59071ZM7.00027 10.1786C5.51886 10.1786 4.31363 8.97696 4.31363 7.5C4.31363 6.02304 5.51886 4.82143 7.00027 4.82143C8.48168 4.82143 9.6869 6.02304 9.6869 7.5C9.6869 8.97696 8.48168 10.1786 7.00027 10.1786Z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </>}
               </div>
               <div onClick={(e) => e.stopPropagation()} className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center relative '>
                 <img onClick={(e) => { setShowDropDown(!showDropDown); e.stopPropagation() }} src={NavbarProfile} className='text-[#000000] dark:text-[#ffffff] min-w-[44px] xsm:min-w-[30px] xsm:w-[30px] xsm:h-[30px] h-[44px]'></img>
-
                 {showDropDown &&
                   <>
                     <div onClick={(e) => e.stopPropagation()} className="transition-all  border-solid border-b-[#525252] border-b-[12px] border-x-transparent border-x-[12px] border-t-0 absolute z-[100000] top-[calc(100%+30px)]"></div>
@@ -208,17 +256,15 @@ export default function Layout() {
                     </div>
                   </>}
               </div>
-              <div className='flex flex-col gap-[0.4166666666666667vw] items-center justify-center'>
-                <img src={NavbarMegaphone} className='text-[#000000] dark:text-[#ffffff] w-[24px] xsm:w-[17px] h-[25.72px]'></img>
-                <p className='text-[#000000] dark:text-[#ffffff] font-[400] text-[14px] xsm:text-[12px] leading-[14px]'>Advertise</p>
-              </div>
             </div>
           </div>
         </div>
-        <div>
+
+        <div onClick={() => setShowNotification(false)}>
           <Outlet />
         </div>
-      </div>
+      </nav>
+      {notificationModal && <NotificationModal setModal={setNotificationModal} />}
     </div>
   )
 }

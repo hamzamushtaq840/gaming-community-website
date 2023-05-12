@@ -5,11 +5,10 @@ import { Link } from 'react-router-dom'
 
 export default function Jobs() {
   return (
-    <div className='dark:text-white dark:bg-black pr-[10.98%] pl-[10.93%] min-h-[calc(100vh-72px)] pb-[97px]'>
-      <h3 className='pt-[63px] font-[700] text-[34px] text-center mb-[40px]'>Company</h3>
-
+    <div className='py-[64px] xsm:px-[6vw] lg:px-[6vw] sm:px-[6vw] gap-[2.0833333333333335vw] px-[9.598958333333334vw] dark:bg-black dark:text-white bg-white text-black'>
+      <h3 className=' text-custom-34 text-center font-[700] leading-[34px] mb-[40px]'>Jobs</h3>
       <div className='flex gap-[30px]'>
-        <div className='w-[272px]'>
+        <div className='w-[262px]'>
           <Link to={"/jobs/add"}>
             <button className='w-full h-[57px] bg-primary flex gap-[10px] justify-center items-center rounded-[9px] font-[400] text-[18px] leading-[20.7px]'>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">

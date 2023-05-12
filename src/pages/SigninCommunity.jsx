@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
+import LoginReview from '../components/Login/LoginReview'
 
 export default function SigninCommunity() {
+  const [loginReview, setLoginReview] = useState(false)
+
+  const handleSignup = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <div className='flex font-helvetica sm:text-[.8rem] md:text-[.9rem] xsm:text-[.7rem]'>
       <div className='signupbg w-[50vw] md:w-[35vw] sm:w-0 xsm:w-0 flex justify-center items-center'>
@@ -20,7 +27,7 @@ export default function SigninCommunity() {
                 <label className='text-[#FF5359] text-[1em] font-[700] mb-[5px]'>Password</label>
                 <input type="password" className='bg-black border-b-[1px] border-[#FFFFFF] text-white' />
               </div>
-              <button className='w-full rounded-[9px] bg-[#EC1F26] h-[3.0625em] text-white text-[0.9375em]'>Login</button>
+              <button onClick={() => setLoginReview(true)} className='w-full rounded-[9px] bg-[#EC1F26] h-[3.0625em] text-white text-[0.9375em]'>Login</button>
             </form>
           </div>
         </div>
@@ -28,6 +35,7 @@ export default function SigninCommunity() {
           <p className='text-[#FFFFFF] text-center text-[1em] font-[400] opacity-[0.75] hover:underline cursor-pointer'>Don’t have an account? Sign up here</p>
         </div>
       </div>
+      {loginReview && <LoginReview setModal={setLoginReview} />}
     </div>
   )
 }
