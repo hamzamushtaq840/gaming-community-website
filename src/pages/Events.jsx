@@ -10,13 +10,13 @@ export default function Events() {
   const navigate = useNavigate()
 
   return (
-    <div className='py-[64px] xsm:px-[6vw] lg:px-[6vw] sm:px-[6vw] gap-[2.0833333333333335vw] px-[10.9375vw] dark:bg-black  bg-white dark:text-white text-black'>
+    <div className='py-[64px] xsm:px-[6vw] lg:px-[6vw] sm:px-[6vw] gap-[2.0833333333333335vw] px-[9.598958333333334vw] dark:bg-black  bg-white dark:text-white text-black'>
       <h1 className='text-custom-34 text-center font-[700] leading-[34px] mb-[40px]'>Events</h1>
       {/* main div */}
       <div className='flex xsm:flex-col sm:flex-col xsm:gap-[20px] sm:gap-[20px] gap-[2.0833333333333335vw]'>
         {/* left section  */}
         <div className='flex flex-col gap-[25px] sm:w-full  sm:items-start xsm:w-full  xsm:items-start'>
-          <button className='buttonAnimation transition-all cursor-pointer flex gap-[8px] px-[4.6875em] py-[1em] text-custom-14 items-center justify-center bg-primary rounded-[9px] buttonAnimation' onClick={() => navigate('/events/submitEvent')}><HiPlus />Submit Event</button>
+          <button className='buttonAnimation transition-all cursor-pointer flex gap-[8px] px-[3.58em] h-[3.18em] text-custom-18 items-center justify-center bg-primary rounded-[9px] buttonAnimation xsm:h-[46.39px] xsm:py-0' onClick={() => navigate('/events/submitEvent')}><HiPlus />Submit Event</button>
           <div className={`dark:bg-[rgba(255,255,255,0.2)] transition-all duration-700 xsm:w-full sm:w-full ${seeMore && "sm:max-h-[1000px] xsm:max-h-[1000px]"} sm:max-h-[60px] xsm:max-h-[60px] sm:overflow-hidden xsm:overflow-hidden bg-white rounded-[9px] divide-y-[0.1px] divide-[#cccccc94] `}>
             <div className=' flex flex-col py-[20px] px-[1.1458333333333333vw] sm:px-[20px] xsm:px-[15px]'>
               <div className='flex justify-between'>

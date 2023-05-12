@@ -33,7 +33,7 @@ const SingleMentorAbout = () => {
         })}
       </div>
       <div className='bg-white mt-[27px] xsm:mt-[20px] sm:mt-[20px] xsm:w-full sm:w-full rounded-9px items-center dark:bg-[rgba(255,255,255,0.2)] rounded-[9px]'>
-        <h1 className='text-custom-20 px-[2.34375vw] py-[24px] xsm:px-[20px] sm:px-[20px] font-[700]'>Experience</h1>
+        <h1 className='text-custom-20 px-[2.34375vw] py-[24px] xsm:px-[20px] sm:px-[20px] font-[700]'>Education</h1>
         <div className='py-[0.1px] bg-[#ccc]'></div>
         {[0, 1,].map((val, index) => {
           return (
@@ -41,12 +41,12 @@ const SingleMentorAbout = () => {
               <div className='flex flex-1'>
                 <div className='flex gap-[16px] items-center'>
                   <div className='h-[61px] w-[61px] rounded-[9px] bg-purple-500'></div>
-                  <div className='flex flex-col gap-[6px]'>
-                    <h1 className='text-custom-16 font-[700]'>Company</h1>
-                    <p className='text-custom-14 opacity-50'>Head of Analytics</p>
+                  <div className='flex flex-col gap-[3px] justify-center'>
+                    <h1 className='text-custom-16 font-[700] mb-[0px]'>University</h1>
+                    <p className='text-custom-14 opacity-50'>Bachelor's Degree</p>
+                    <p className='text-custom-14 opacity-50'>Class of 2020</p>
                   </div>
                 </div>
-
               </div>
             </div>
           )

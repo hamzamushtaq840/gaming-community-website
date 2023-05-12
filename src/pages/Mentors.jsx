@@ -6,12 +6,12 @@ import SingleMentor from '../components/Mentor/SingleMentor'
 
 const Mentors = () => {
   return (
-    <div className='py-[64px] xsm:px-[6vw] lg:px-[6vw] sm:px-[6vw] gap-[2.0833333333333335vw] px-[10.9375vw] dark:bg-black dark:text-white bg-white text-black'>
+    <div className='py-[64px] xsm:px-[6vw] lg:px-[6vw] sm:px-[6vw] gap-[2.0833333333333335vw] px-[9.598958333333334vw] dark:bg-black dark:text-white bg-white text-black'>
       <h1 className='text-custom-34 text-center font-[700] leading-[34px] mb-[40px]'>Mentors</h1>
       <div className='flex items-start xsm:flex-col sm:flex-col md:flex-col xsm:gap-[20px] sm:gap-[20px] gap-[2.0833333333333335vw]'>
-        <button className='buttonAnimation transition-all cursor-pointer flex gap-[8px] px-[4.6875em] py-[1.125em] text-custom-18 xsm:py-[.7em] items-center justify-center bg-primary rounded-[9px]'>All Mentors</button>
+        <button className='buttonAnimation transition-all cursor-pointer flex gap-[8px] px-[4.7875em] py-[0.82em] text-custom-18 items-center justify-center bg-primary rounded-[9px]  xsm:h-[46.39px]'>All Mentors</button>
         <div className='flex flex-col flex-1'>
-          <div className='bg-white rounded-9px items-center dark:bg-[rgba(255,255,255,0.2)] py-[1.125em] px-[1.75em] rounded-[9px] flex gap-[1.125em] text-custom-18 xsm:w-full sm:w-full flex-1'>
+          <div className='bg-white rounded-9px items-center dark:bg-[rgba(255,255,255,0.2)] py-[1.125em] px-[1.75em] rounded-[9px] flex gap-[1.125em] text-custom-18 xsm:w-full sm:w-full flex-1 xsm:py-[.8em] '>
             <img src={search} alt="" />
             <input type="text" placeholder='Search by name, expertise, location, affiliation' className='flex-1 outline-none bg-transparent' />
             <div className='w-[1.5em] h-[1.5em] rounded-full bg-white text-custom-12 text-black flex items-center justify-center'>

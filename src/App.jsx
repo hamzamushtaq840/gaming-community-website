@@ -1,63 +1,70 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import AboutEdit from "./components/About/AboutEdit"
 import AchievedGoals from "./components/Community/AchievedGoals"
 import OfferOpportunities from "./components/Community/OfferOpportunities"
+import CompanyAdd from "./components/Company/CompanyAdd"
+import CompanyAnalytics from "./components/Company/CompanyAnalytics"
+import CompanyInformation from "./components/Company/CompanyInformation"
+import CompanyManage from "./components/Company/CompanyManage"
+import CompanyManageLayout from "./components/Company/CompanyManageLayout"
+import CompanyPages from "./components/Company/CompanyPages"
+import CompanyShare from "./components/Company/CompanyShare"
+import DataRepositoryAdd from "./components/DataRepository/DataRepositoryAdd"
+import DataRepositoryInfo from "./components/DataRepository/DataRepositoryInfo"
+import AllEvents from "./components/Events/AllEvents"
+import SingleEventDetail from "./components/Events/SingleEventDetail"
+import SubmitEvent from "./components/Events/SubmitEvent"
+import SingleInvestorDetail from "./components/Investor/SingleInvestorDetail"
+import JobInformation from "./components/Jobs/JobInformation"
+import JobsAdd from "./components/Jobs/JobsAdd"
+import KnowledgeHubAdd from "./components/KnowlegdeHub/KnowledgeHubAdd"
+import KnowledgeHubInfo from "./components/KnowlegdeHub/KnowledgeHubInfo"
+import EditGroupItem from "./components/LabsAndGroups/EditGroupItem"
+import SingleGroupDetail from "./components/LabsAndGroups/SingleGroupDetail"
+import Gigs from "./components/Marketplace/Gigs"
+import OtherServices from "./components/Marketplace/OtherServices"
+import Projects from "./components/Marketplace/Projects"
+import SingleMentorAbout from "./components/Mentor/SingleMentorAbout"
+import SingleMentorAvalibility from "./components/Mentor/SingleMentorAvalibility"
+import SingleMentorDetail from "./components/Mentor/SingleMentorDetail"
 import ManageProfile from "./components/Profile/ManageProfile"
 import ProfileAnalytics from "./components/Profile/ProfileAnalytics"
 import ProfilePage from "./components/Profile/ProfilePage"
+import ProfileSecurity from "./components/Profile/ProfileSecurity"
 import ProfileShare from "./components/Profile/ProfileShare"
 import ViewProfile from "./components/Profile/ViewProfile"
+import SupportEdit from "./components/Support/SupportEdit"
+import Admins from "./components/TeamProfile/Admins/Admins"
 import AllTeams from "./components/TeamProfile/AllTeams/AllTeams"
+import Member from "./components/TeamProfile/Member/Member"
 import CommunityNav from "./layout/CommunityNav"
 import Layout from "./layout/Layout"
+import Aboutus from "./pages/Aboutus"
 import Community from "./pages/Community"
+import Company from "./pages/Company"
 import Dashboard from "./pages/Dashboard"
+import DataRepository from "./pages/DataRepository"
+import Events from "./pages/Events"
+import Investors from "./pages/Investors"
+import Jobs from "./pages/Jobs"
+import KnowledgeHub from "./pages/KnowledgeHub"
+import LabsAndGroups from "./pages/LabsAndGroups"
+import Marketplace from "./pages/Marketplace"
+import Mentors from "./pages/Mentors"
 import Profile from "./pages/Profile"
 import SigninCommunity from "./pages/SigninCommunity"
 import SigninMain from "./pages/SigninMain"
 import SignupCommunity from "./pages/SignupCommunity"
 import SignupMain from "./pages/SignupMain"
-import TeamProfile from "./pages/TeamProfile"
-import Admins from "./components/TeamProfile/Admins/Admins"
-import Member from "./components/TeamProfile/Member/Member"
-import LabsAndGroups from "./pages/LabsAndGroups"
-import SingleGroupDetail from "./components/LabsAndGroups/SingleGroupDetail"
-import EditGroupItem from "./components/LabsAndGroups/EditGroupItem"
-import Events from "./pages/Events"
-import SingleEventDetail from "./components/Events/SingleEventDetail"
-import AllEvents from "./components/Events/AllEvents"
-import SubmitEvent from "./components/Events/SubmitEvent"
-import Mentors from "./pages/Mentors"
-import Investors from "./pages/Investors"
-import SingleMentorDetail from "./components/Mentor/SingleMentorDetail"
-import SingleMentorAvalibility from "./components/Mentor/SingleMentorAvalibility"
-import SingleMentorAbout from "./components/Mentor/SingleMentorAbout"
-import SingleInvestorDetail from "./components/Investor/SingleInvestorDetail"
-import ProfileSecurity from "./components/Profile/ProfileSecurity"
-import Company from "./pages/Company"
-import CompanyInformation from "./components/Company/CompanyInformation"
-import CompanyAdd from "./components/Company/CompanyAdd"
-import CompanyManageLayout from "./components/Company/CompanyManageLayout"
-import CompanyManage from "./components/Company/CompanyManage"
-import CompanyAnalytics from "./components/Company/CompanyAnalytics"
-import CompanyShare from "./components/Company/CompanyShare"
-import CompanyPages from "./components/Company/CompanyPages"
-import Jobs from "./pages/Jobs"
-import JobInformation from "./components/Jobs/JobInformation"
-import JobsAdd from "./components/Jobs/JobsAdd"
-import KnowledgeHub from "./pages/KnowledgeHub"
-import KnowledgeHubInfo from "./components/KnowlegdeHub/KnowledgeHubInfo"
-import KnowledgeHubAdd from "./components/KnowlegdeHub/KnowledgeHubAdd"
-import DataRepository from "./pages/DataRepository"
-import DataRepositoryInfo from "./components/DataRepository/DataRepositoryInfo"
-import DataRepositoryAdd from "./components/DataRepository/DataRepositoryAdd"
-import Aboutus from "./pages/Aboutus"
-import AboutEdit from "./components/About/AboutEdit"
 import Support from "./pages/Support"
-import SupportEdit from "./components/Support/SupportEdit"
-import Marketplace from "./pages/Marketplace"
-import Gigs from "./components/Marketplace/Gigs"
-import Projects from "./components/Marketplace/Projects"
-import OtherServices from "./components/Marketplace/OtherServices"
+import TeamProfile from "./pages/TeamProfile"
+import NotificationProfile from "./components/Notification/NotificationProfile"
+import Notifications from "./pages/Notifications"
+import YourJobs from "./components/Notification/YourJobs"
+import YourProjects from "./components/Notification/YourProjects"
+import GuestDashboard from "./pages/GuestDashboard"
+import Matches from "./pages/Matches"
+import AllMatches from "./components/Matches/AllMatches"
 
 export default function App() {
   return (
@@ -65,9 +72,9 @@ export default function App() {
       <Routes>
         {/* Authentication Routes */}
         <Route path="/signup" element={<SignupMain />}></Route>
-        <Route path="/signup-community/:communityId" element={<SignupCommunity />}></Route>
+        <Route path="/signup-community" element={<SignupCommunity />}></Route>
         <Route path="/signin" element={<SigninMain />}></Route>
-        <Route path="/signin-community/:communityId" element={<SigninCommunity />}></Route>
+        <Route path="/signin-community" element={<SigninCommunity />}></Route>
         {/* Landing Page */}
         <Route element={<CommunityNav></CommunityNav>}>
           <Route path="/" element={<Community />}>
@@ -78,6 +85,12 @@ export default function App() {
         {/* Other Routes */}
         <Route element={<Layout></Layout>}>
           <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
+          <Route path="/guest/dashboard" element={<GuestDashboard></GuestDashboard>}></Route>
+
+          <Route path="/matches">
+            <Route index element={<Matches />}></Route>
+            <Route path="allMatches" element={<AllMatches />}></Route >
+          </Route>
 
           <Route path="/profile" element={<Profile></Profile>}>
             <Route index element={<ViewProfile></ViewProfile>}></Route>
@@ -133,26 +146,27 @@ export default function App() {
             <Route index element={<Support></Support>}></Route>
             <Route path="edit" element={<SupportEdit></SupportEdit>}></Route>
           </Route>
+
           <Route path="/team-profile">
             <Route index element={<TeamProfile />}></Route>
             <Route path="allTeams" element={<AllTeams />}></Route>
             <Route path="admins" element={<Admins />}></Route>
             <Route path="member" element={<Member />}></Route>
           </Route>
-          {/* Labs And Groups */}
+
           <Route path="/labs-and-groups">
             <Route index element={<LabsAndGroups />}></Route>
             <Route path="singleGroupDetail" element={<SingleGroupDetail />}></Route>
             <Route path="editGroupItem" element={<EditGroupItem />}></Route>
           </Route>
-          {/* Events */}
+
           <Route path="/events">
             <Route index element={<Events />}></Route>
             <Route path="singleEventDetail" element={<SingleEventDetail />}></Route>
             <Route path="allEvents" element={<AllEvents />}></Route>
             <Route path="submitEvent" element={<SubmitEvent />}></Route>
           </Route>
-          {/* Mentors */}
+
           <Route path="/mentor">
             <Route index element={<Mentors />}></Route>
             <Route element={<SingleMentorDetail />}>
@@ -160,10 +174,17 @@ export default function App() {
               <Route path="singleMentorAbout" element={<SingleMentorAbout />}></Route>
             </Route>
           </Route>
-          {/* Investors */}
+
           <Route path="/investor">
             <Route index element={<Investors />}></Route>
             <Route path="singleInvestorDetail" element={<SingleInvestorDetail />}></Route>
+          </Route>
+
+          <Route path="/notification" element={<Notifications></Notifications>}>
+            <Route element={<NotificationProfile />}>
+              <Route index element={<YourJobs />}></Route>
+              <Route path="yourProjects" element={<YourProjects />}></Route>
+            </Route>
           </Route>
         </Route >
       </Routes >
